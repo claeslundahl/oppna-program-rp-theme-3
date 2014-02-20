@@ -80,6 +80,8 @@ $theme.include($body_top_include)
 
 $theme.include($body_bottom_include)
 
+#parse ("$full_templates_path/theme_js_bottom.vm")
+
 $theme.include($bottom_include)
 
 </body>

@@ -134,9 +134,12 @@
 
 #set($js_full_path = $full_templates_path + "/../js")
 
-## If set to true, theme_js_scripts are loaded inline in page (i.e. directly inside a script tag) which reduces the number of http requests
+## If set to true, theme_js_scripts are loaded inline in page (i.e. directly inside a script tag)
+## which reduces the number of http requests
 #set($theme_js_inline = false)
 
+## Original list
+#*
 #set($theme_js_scripts = [
     "fixes/ios-orientationchange-fix.js",
 	"modules/rp-action-confirmation-plugin.js",
@@ -152,8 +155,20 @@
     "modules/rp-theme-2.js",
     "theme-main.js"
 ])
+*#
 
-##"modules/rp-placeholder-plugin.js",
+#set($theme_js_scripts = [
+    "fixes/ios-orientationchange-fix.js",
+	"modules/rp-footer-plugin.js",
+    "modules/rp-quick-access-nav.js",
+    "modules/rp-system-help.js",
+    "modules/rp-navigation-button.js",
+    "modules/rp-news-carousel.js",
+	"modules/rp-placeholder-plugin.js",
+    "modules/rp-theme-2.js",
+    "theme-main.js"
+])
+
 
 ##
 ## Portal type

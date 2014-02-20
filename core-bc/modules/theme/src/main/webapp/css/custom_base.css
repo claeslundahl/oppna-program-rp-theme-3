@@ -300,7 +300,8 @@
   .aui #banner h2,
   .aui #banner h3,
   .aui .site-breadcrumbs h1,
-  #banner .site-title .site-name {
+  #banner .site-title .site-name,
+  #banner .page-title {
     clip: rect(0,0,0,0);
     position: absolute;
   }
