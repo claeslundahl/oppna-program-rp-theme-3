@@ -63,6 +63,14 @@ $theme.include($body_top_include)
 
 		#if ($selectable)
 			$theme.include($content_include)
+
+				<div id="toolsSidebar" class="tools-sidebar">
+					#if($show_notifications_portlet)
+						#parse ("$full_templates_path/notifications.vm")
+					#end
+				</div>
+
+
 		#else
 			$portletDisplay.recycle()
 

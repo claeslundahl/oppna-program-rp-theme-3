@@ -97,10 +97,11 @@
 ##
 
 #set($show_notifications_portlet = $is_signed_in)
-##set($show_notifications_portlet = false)
+#set($show_notifications_portlet = true)
 
 #set ($notifications_portlet_stub_id = "notificationsbarstubportlet_WAR_notificationsbarstubportlet")
-#set ($notifications_portlet_prod_id = "notifications_WAR_notificationsportlet")
+##set ($notifications_portlet_prod_id = "notifications_WAR_notificationsportlet")
+#set ($notifications_portlet_prod_id = "notifications_WAR_notificationsrpportlet")
 
 #set ($notifications_portlet_id = $notifications_portlet_stub_id)
 #set ($notifications_portlet_id = $notifications_portlet_prod_id)
