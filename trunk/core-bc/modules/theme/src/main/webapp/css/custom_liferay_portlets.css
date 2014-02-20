@@ -1,0 +1,791 @@
+.aui {
+
+	/*----------------------------------------------------------------------
+	=Liferay Portlets
+	----------------------------------------------------------------------*/
+
+	/*------- Portlet wrapper and icons -------*/
+
+	.portlet {
+		background-color: transparent;
+		margin: 0 0 15px 0;
+		padding: 0;
+		text-align: left;
+	}
+
+	.portlet .portlet-topper {
+		background: #2f6ea1 url(../images/portlet/portlet-hd-bg-2.png) top left repeat-x;
+		/*behavior: url(/vgr-alfa-theme/htc/css3pie.htc);*/
+		-moz-border-radius-topleft: 6px;
+		-moz-border-radius-topright: 6px;
+		-webkit-border-radius: 6px 6px 0 0;
+		border-radius: 6px 6px 0 0;	
+		position: relative;
+		
+		border: 1px solid #245780;
+		
+		-moz-box-shadow: 0px 1px 4px 0px #cccccc;
+		-webkit-box-shadow: 0px 1px 4px 0px #cccccc;
+		box-shadow: 0px 1px 4px 0px #cccccc;	
+	}
+
+	.portlet .portlet-content {
+		background: #fff;
+		/*behavior: url(/vgr-alfa-theme/htc/css3pie.htc);*/
+		
+		border: 1px solid #cad5de;
+		
+		border-width: 0 1px 1px 1px;
+		-moz-border-radius-bottomleft: 6px;
+		-moz-border-radius-bottomright: 6px;
+		-webkit-border-radius: 0 0 6px 6px;
+		border-radius:  0 0 6px 6px;	
+		
+		-moz-box-shadow: 0px 1px 4px 0px #cccccc;
+		-webkit-box-shadow: 0px 1px 4px 0px #cccccc;
+		box-shadow: 0px 1px 4px 0px #cccccc;	
+		
+		padding: 12px;
+		position: relative;	
+	}
+
+	.portlet-title {
+		color: #fff;
+		float: none;
+		font-family: Ubuntu, Arial, Verdana, Helvetica, sans-serif;
+		font-size: 1.3em;
+		font-weight: normal;
+		padding: 7px 10px;
+	}
+
+	.portlet-title .icon {
+		display: none;
+	}
+
+	.portlet-icons {
+		float: none;
+	}
+
+	.portlet-msg-info {
+	    background-repeat: no-repeat;
+	}
+
+	.portlet-icons .portlet-close-icon {
+		border-width: 0;
+	}
+
+	.page-maximized .portlet-icons {
+		font-size: 11px;
+	}
+
+	a.portlet-icon-back,
+	a.portlet-icon-back:hover {
+		background: none;
+		color: #fff;
+		padding: 5px;
+		text-decoration: none;
+	}
+
+	a.portlet-icon-back:hover {
+		text-decoration: underline;
+	}
+
+	.ie .portlet-title {
+		padding-bottom: 5px;
+	}
+
+	.ie6 .portlet-topper {
+		zoom: 1;
+	}
+
+	.lfr-actions.portlet-options .lfr-trigger strong a {
+		text-indent: -9999px;
+		text-decoration: none;
+	}
+
+	.portlet-minimize a,
+	.portlet-minimize a:hover,
+	.portlet-maximize a,
+	.portlet-maximize a:hover,
+	.portlet-close a,
+	.portlet-close a:hover {
+		text-decoration: none;
+	}
+
+	/*------- Dockbar Portlet ------*/
+
+	.dockbar {
+		visibility: visible;
+	}
+
+
+	/*------- Navigation Portlet (Section Navigation) ------*/
+
+	ul.section-navigation-list {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;	
+	}
+
+	ul.section-navigation-list li {
+		display: block;
+		float: left;
+		margin: 10px 30px 10px 0;
+		width: 290px;
+		
+		margin: 10px 2% 10px 0;
+		width: 47.9%;
+	}
+
+	ul.section-navigation-list li a {
+		background: #bcd3e6;
+		border: 1px solid #aac9e2;
+		-webkit-box-shadow: 0 1px 0 0 #fff;
+		-moz-box-shadow: 0 1px 0 0 #fff;
+		box-shadow: 0 1px 0 0 #fff;
+		-webkit-border-radius: 6px;
+		-moz-border-radius: 6px;
+		border-radius: 6px;
+		display: block;	
+		padding: 10px;
+		text-decoration: none;
+	}
+
+	ul.section-navigation-list li a .inner {
+		background: #fff url(../images/navigation/section-navigation-icons-sprite.png) 0 0 no-repeat;
+		display: block;
+		min-height: 100px;
+		padding: 10px;
+		padding-left: 80px;
+		position: relative;
+	}
+
+	ul.section-navigation-list li a:hover {
+		background: #87aecf;
+		border-color: #7594ae;
+	}
+
+	ul.section-navigation-list li a:hover,
+	ul.section-navigation-list li a:hover .inner {
+		cursor: pointer;
+	}
+
+
+	/* Mitt jobb */
+	ul.section-navigation-list li.documents a .inner { background-position: 0 -300px; }
+	ul.section-navigation-list li.communication a .inner { background-position: 0 -600px; }
+	ul.section-navigation-list li.region-calendar a .inner { background-position: 0 -900px; }
+	ul.section-navigation-list li.sambo a .inner { background-position: 0 -1200px; }
+	ul.section-navigation-list li.travel-booking a .inner { background-position: 0 -1500px; }
+	ul.section-navigation-list li.heroma a .inner { background-position: 0 -1800px;	}
+	ul.section-navigation-list li.clarity a .inner { background-position: 0 -2100px; }
+	ul.section-navigation-list li.pivotaltracker a .inner { background-position: 0 -2400px; }
+
+	/* Mitt jobb - dokumenthantering */
+	ul.section-navigation-list li.alfresco a .inner { background-position: 0 -2700px; }
+	ul.section-navigation-list li.antura a .inner { background-position: 0 -3000px; }
+	ul.section-navigation-list li.barium a .inner { background-position: 0 -3300px; }
+	ul.section-navigation-list li.evernote a .inner { background-position: 0 -3600px; }
+
+	/* Min profil */
+	ul.section-navigation-list li.mina-kiv-uppgifter a .inner { background-position: 0 -3900px; }
+	ul.section-navigation-list li.mina-system a .inner { background-position: 0 -4200px; }
+	ul.section-navigation-list li.mina-inloggningar a .inner { background-position: 0 -4500px; }
+	ul.section-navigation-list li.mitt-losenord a .inner { background-position: 0 -4800px; }
+
+	/* Administration */
+	ul.section-navigation-list li.kiv-admin a .inner { background-position: 0 -5100px; }
+	ul.section-navigation-list li.fakturaportalen a .inner { background-position: 0 -5400px; }
+	ul.section-navigation-list li.utdataplattformen a .inner { background-position: 0 -5700px; }
+	ul.section-navigation-list li.tycktill-admin a .inner { background-position: 0 -6000px; }
+	ul.section-navigation-list li.ehandel a .inner { background-position: 0 -6300px; }
+	ul.section-navigation-list li.debug a .inner { background-position: 0 -6600px; }
+	ul.section-navigation-list li.externa-anvandare a .inner { background-position: 0 -6900px; }
+	ul.section-navigation-list li.behorighetsblanketten a .inner { background-position: 0 -7200px; }
+
+	/* Hitta */
+	ul.section-navigation-list li.hitta a .inner { background-position: 0 -7500px; }
+	ul.section-navigation-list li.sok-i-kiv a .inner { background-position: 0 -7800px; }
+	ul.section-navigation-list li.sok-i-hsa a .inner { background-position: 0 -8100px; }
+
+	ul.section-navigation-list li a .title {
+		display: block;
+		color: #333;
+		font-family: Ubuntu, Arial, Verdana, Helvetica, sans-serif;
+		font-size: 1.4em;
+	}
+
+	ul.section-navigation-list li a .description {
+		color: #333;
+		display: block;
+	}
+
+	/*------- Portlet Alerts -------*/
+
+	/* Not actually styling of portlet alerts, but the y-padding set to 0 is needed since portlet alerts will be in this column */
+	.controls-hidden .portlet-layout .hundred .portlet-column-content {
+		padding: 0 15px;
+	}
+
+	.portlet-alerts .portlet-body .entry-content {
+	    padding: 2px;
+	}
+
+	.portlet-alerts .portlet-body .entry {
+	    background-color: #f33;
+	    border: 1px solid #faa;
+	    color: white;
+	    padding: 0px;
+	    padding-left: 12px;
+	}
+
+	.portlet-alerts .portlet-body .read-entries .entry {
+	    background-image: url("../images/warning-grey.png");
+	}
+
+	.portlet-alerts .entry-scope {
+	    display: none;
+	}
+
+	/* hide controls */ 
+	.portlet-alerts .entry .control-entry {
+	    display: none;
+	}
+	.controls-hidden .portlet-alerts .edit-actions {
+	    display: none;
+	}
+
+	.controls-hidden .portlet-alerts .portlet-borderless-container {
+		min-height: 0;
+	} 
+
+	.controls-hidden .portlet-alerts .aui-tabview-list {
+	    display: none;
+		margin: 0;
+		padding: 0;
+	}
+
+
+	.portlet-alerts .portlet-body .entry .entry-title {
+	    color: white;
+	    padding: 2px 2px 2px 0px;
+	    background-color: transparent;
+	}
+
+	.portlet-alerts .portlet-body .entry .entry-title .edit-actions table {
+	    /* for some reason IE gets fixed table layout below, this doesn't work here 
+	       the edi actions swells out to 100% width */
+	    table-layout: auto !important; 
+	}
+
+
+	.portlet-alerts .portlet-body .entry a {
+	    color: white;
+	}
+
+	/* custom classed portlet alerts 
+	   Used for system information instead of alerts 
+	   Add class 'portlet-alerts-info'
+	   */
+	.portlet-alerts-info .portlet-body .entry {
+	    background-color: #005690;
+	    color: white;
+	    background-image: none;
+	    border: none;
+	    padding-left: 35px;
+	}
+
+
+	.portlet-alerts-info .entry-scope {
+		display: none;
+	}
+
+	.portlet-alerts-info .portlet-body .entry .entry-title,.portlet-alerts-info .portlet-body .entry .entry-title a {
+	    color: white;
+	}
+
+	.portlet-alerts-info .entry-title {
+	    font-size: 27px;
+	    text-align: center;
+	    margin-top: 9px;
+	}
+
+	.portlet-alerts-info .entry-content {
+	    text-align: center;
+	}
+
+	.portlet-alerts-info .edit-actions a {
+	    font-size: 9px;
+	}
+
+	.portlet-alerts-info .control-entry  {
+	    display: none;
+	}
+
+
+	/*------  Portlet Announcements --------*/
+
+	.portlet-announcements .entry .entry-scope {
+	    display: none;
+	}
+
+	.portlet-announcements .entry p {
+	    background-color: #ffe;
+	    border-top: 1px solid #bebebe;
+	    padding-left: 6px;
+	}
+
+	/* hide controls */ 
+	.portlet-announcements .entry .control-entry {
+	    display: none;
+	}
+	.controls-hidden .portlet-announcements .edit-actions {
+	    display: none;
+	}
+	.controls-hidden .portlet-announcements .aui-tabview-list {
+	    display: none;
+	}
+
+
+	.portlet-announcements .entry-title, .portlet-alerts .entry-title {
+	    background-color: #FFFFBB;
+	    color: #333;
+	    padding-left: 6px;
+	    
+	}
+
+	/*------- Portlet Knowledge Base Display/Knowledge Base Aggregator ------*/
+
+	/* Remove unnecessary cruft */
+	.knowledge-base-portlet-display .kb-article-tools td,.knowledge-base-portlet-aggregator .kb-article-tools td {
+	    display: none;
+	}
+	/* we do like to display print though */
+	.knowledge-base-portlet-display .kb-article-tools td+td+td+td,.knowledge-base-portlet-aggregator .kb-article-tools td+td+td+td {
+	    display: table-cell;
+	}
+
+	/* Enhance readability, line lenght, line height and font-size */
+	.knowledge-base-portlet-display .kb-entity-body,
+	.knowledge-base-portlet-aggregator .kb-entity-body {
+	  text-align: left;
+	  
+	  /*
+	  line-height: 1.7;
+	  font-size: 12pt;
+	  */
+	  width: 40em;
+	}
+
+	.knowledge-base-portlet-display .kb-entity-header {
+		border-bottom: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.knowledge-base-portlet-display .kb-entity-header .kb-title,
+	.knowledge-base-portlet-aggregator .kb-entity-header .kb-title {
+		color: #444;
+		font-family: Ubuntu, Arial, Verdana, Helvetica, sans-serif;
+		font-size: 1.8em;
+		font-weight: normal;
+		margin: 1.0em 0 0.4em 0;
+	}
+
+	.knowledge-base-portlet-display .kb-article-comments .lfr-panel-title,
+	.knowledge-base-portlet-aggregator .kb-article-comments .lfr-panel-title { 
+		/*font-size: 85%;*/
+	}
+
+	.knowledge-base-portlet-display .kb-article-comments.kb-submit-buttons input,
+	.knowledge-base-portlet-aggregator .kb-article-comments.kb-submit-buttons input {
+		/*font-size: 80%;*/
+	}
+
+	.knowledge-base-portlet-display .kb-article-comments .user-profile-image,
+	.knowledge-base-portlet-aggregator .kb-article-comments .user-profile-image {
+	    display: none;
+	}
+
+	.knowledge-base-portlet-display .kb-article-comments .user-details,
+	.knowledge-base-portlet-aggregator .kb-article-comments .user-details {
+	    width: 40em;
+	}
+	.knowledge-base-portlet-display .kb-article-comments .user-details .user-name,
+	.knowledge-base-portlet-aggregator .kb-article-comments .user-details .user-name {
+	    text-align: right;
+	}
+
+	/* -- In help/sidebar column -- */
+
+	#column-sidebar .knowledge-base-portlet-display .kb-entity-header {
+		display: none;
+	}
+
+	#column-sidebar .knowledge-base-portlet-display .kb-entity-body {
+		font-size: 1.1em;
+		padding: 0;
+		line-height: 1.2em;
+		text-align: left;
+		width: 100%;
+	}
+
+	#column-sidebar .knowledge-base-portlet-display .kb-entity-header .kb-title {
+		display: none;
+	}
+
+	/*------- Portlet Knowledge Base Aggregator ------*/
+
+	.knowledge-base-portlet-aggregator .portlet-body {}
+
+	.knowledge-base-portlet-aggregator .lfr-panel-container {
+		background: none;
+	}
+
+	.knowledge-base-portlet-aggregator .lfr-panel .lfr-panel-titlebar {
+		background: none;
+		padding-left: 0;
+	}
+
+	.knowledge-base-portlet-aggregator .lfr-panel-titlebar .lfr-panel-title {
+		color: #444;
+		font-family: Ubuntu, Arial, Verdana, Helvetica, sans-serif;
+		font-size: 1.8em;
+		font-weight: normal;
+		margin: 1em 0 0.4em 0;
+	}
+
+	.knowledge-base-portlet-aggregator .lfr-panel .lfr-panel-content {
+		background: #fff;
+		border: 1px solid #cad5de;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		border-radius: 4px;
+		-moz-box-shadow: 0px 1px 4px 0px #cccccc;
+		-webkit-box-shadow: 0px 1px 4px 0px #cccccc;
+		box-shadow: 0px 1px 4px 0px #cccccc;	
+		/*behavior: url(/vgr-alfa-theme/htc/css3pie.htc);*/
+		padding: 12px;
+		position: relative;	
+		
+	}
+
+	.knowledge-base-portlet-aggregator .search-results {
+		display: none;
+	}
+
+	.knowledge-base-portlet-aggregator .kb-title-wrapper {
+		padding: 2px 0;
+	}
+
+	.knowledge-base-portlet-aggregator a.taglib-icon .taglib-text {
+		text-decoration: none;
+	}
+
+	.knowledge-base-portlet-aggregator a.taglib-icon:hover .taglib-text {
+		text-decoration: underline;
+	}
+
+	/*------- Blogs Portlet ------*/
+
+	.portlet-blogs {}
+
+	.portlet-blogs .search-form {
+		display: block;
+		float: none;
+	}
+
+	.portlet-blogs .search-form .aui-search-bar {
+		display: none;	
+	}
+
+	.portlet-blogs .taglib-header {
+		border: none;
+	}
+
+	.portlet-blogs .header-back-to {
+		display: none;
+	}
+
+	.portlet-blogs .blogs-entries-wrap {}
+
+	.portlet-blogs .blogs-entries-wrap .entry {
+		background: #eef5fa;
+		border: 1px solid #c4ced5;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		border-radius: 3px;
+		/*behavior: url(/vgr-alfa-theme/htc/css3pie.htc);*/
+		margin: 7px 0;
+		padding: 10px;
+		position: relative;
+	}
+
+	.portlet-blogs .blogs-entries-wrap .entry-odd {
+		background: #fff;
+	}
+
+	.portlet-blogs .blogs-entries-wrap .separator {
+		display: none;
+	}
+
+	.portlet-blogs .blogs-entries-wrap .entry-title {
+		font-family: Ubuntu, Arial, Verdana, Helvetica, sans-serif;
+		margin: 5px 0;
+	}
+
+	.portlet-blogs .blogs-entries-wrap .entry-title a {
+		color: #2f72a9;
+		text-decoration: none;
+	}
+
+	.portlet-blogs .blogs-entries-wrap .entry-title a:hover {
+		color: #2f72a9;
+		text-decoration: underline;	
+	}
+
+	.portlet-blogs .entry-title a {
+		color: #666;
+		font-family: Ubuntu, Arial, Verdana, Helvetica, sans-serif;
+		font-weight: normal;
+		text-decoration: none;
+	}
+
+	.portlet-blogs .entry-title a:hover {
+		text-decoration: underline;
+	}
+
+	.portlet-blogs .entry-date {
+		background: none;
+		color: #777;
+		padding-left: 0;
+	}
+
+	.portlet-blogs .entry .entry-body a {
+		/*display: none;*/
+	}
+
+	/* Clearfix style clearing */
+	.portlet-blogs .entry-footer:after{clear:both;content:'.';display:block;visibility:hidden;height:0}
+	.portlet-blogs .entry-footer{display:inline-block}
+	* html .portlet-blogs .entry-footer{height:1%}
+	.portlet-blogs .entry-footer{display:block}
+
+	.portlet-blogs .entry-author {
+		background: none;
+		color: #777;
+		padding-left: 0;
+	}
+
+	.portlet-blogs .stats .comments a,
+	.portlet-blogs .taglib-flags span a {
+		text-decoration: none;
+	}
+
+	.portlet-blogs .stats .comments a:hover,
+	portlet-blogs .taglib-flags span a:hover {
+		text-decoration: underline;
+	}
+
+	.portlet-blogs .view-count {
+		display: none;
+	}
+
+	.portlet-blogs .taglib-social-bookmarks {
+		clear: both;
+		display: none;
+	}
+
+	.portlet-blogs .subscribe {
+		display: none;
+	}
+
+	/* View specific entry */
+	.portlet-blogs h1.header-title {
+		color: #444;
+		font-size: 1.8em;	
+	}
+
+	/* Paging full */
+	.portlet-blogs .taglib-page-iterator {
+		margin-bottom: 0;
+	}
+
+	.portlet-blogs .taglib-page-iterator .search-pages .page-selector,
+	.portlet-blogs .taglib-page-iterator .search-pages .delta-selector {
+		display: none;
+	}
+
+
+	/* Paging simple */
+
+	.portlet-blogs .entry-navigation {
+		background: transparent;
+		border: 0;
+		margin: 15px 0;
+	}
+
+	.portlet-blogs .entry-navigation a.previous,
+	.portlet-blogs .entry-navigation a.next {
+		background-image: url(../images/paginator/pager-simple-sprite.png);
+		background-repeat: no-repeat;
+		border: none;
+		color: #255d8c;	
+		display:block;
+		height: 25px;
+		line-height: 25px;
+		padding: 2px 30px;
+		position: relative;
+		text-decoration: none;
+		position: relative;	
+	}
+
+	.portlet-blogs .entry-navigation a.previous:hover,
+	.portlet-blogs .entry-navigation a.next:hover {
+		text-decoration: underline;
+	}
+
+	.portlet-blogs .entry-navigation a.previous {
+		background-position: 0 0;
+	}
+
+	.portlet-blogs .entry-navigation a.next {
+		background-position: 100% -50px;
+	}
+
+	.portlet-blogs .entry-navigation span.previous,
+	.portlet-blogs .entry-navigation span.next {
+		display: none;
+	}
+
+	/* Commenting */
+
+	.portlet-blogs #blogsCommentsPanelContainer {}
+
+	.portlet-blogs #blogsCommentsPanelContainer .lfr-panel-titlebar {
+		background: none;
+	}
+
+	.portlet-blogs #blogsCommentsPanelContainer .lfr-panel-titlebar .lfr-panel-title {
+		color: #555;
+		font-family: Ubuntu, Arial, Verdana, Helvetica, sans-serif;
+		font-size: 1.3em;
+		font-weight: normal;
+	}
+		
+	.portlet-blogs .add-comment {}
+
+	.portlet-blogs .add-comment a.taglib-icon {
+		background: #2865ad url(../images/buttons/button-bg-normal.png) 0 0 repeat-x;
+		border: 1px solid #2f71a8;
+		border-color: #2f71a8 #052a73 #052a73 #2f71a8;  
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		border-radius: 3px;
+		/*behavior: url(/vgr-alfa-theme/htc/css3pie.htc);*/
+		color: #fff;
+		display: block;
+		float: left;
+		font-family: Ubuntu, Arial, Verdana, Helvetica, sans-serif;
+		font-size: 16px;
+		font-weight: normal;
+		padding: 10px 15px;
+		position: relative;
+		text-shadow: none;
+		
+	}
+
+	.portlet-blogs .add-comment a.taglib-icon img {
+		display: none;
+	}
+
+
+	/* Clearfix style clearing */
+	.portlet-blogs .add-comment a.taglib-icon:after{clear:both;content:'.';display:block;visibility:hidden;height:0}
+	.portlet-blogs .add-comment a.taglib-icon{display:inline-block}
+	* html .portlet-blogs .add-comment a.taglib-icon{height:1%}
+	.portlet-blogs .add-comment a.taglib-icon{display:block}
+
+
+	.portlet-blogs .add-comment a.taglib-icon:hover {
+		background: #2865ad url(../images/buttons/button-bg-normal.png) 0 0 repeat-x;
+		border: 1px solid #c4d9f6;
+	}
+
+	.portlet-blogs .add-comment a.taglib-icon img {
+	}
+
+	.portlet-blogs .add-comment a.taglib-icon .taglib-text,
+	.portlet-blogs .add-comment a.taglib-icon:hover .taglib-text {
+		text-decoration: none;
+	}	
+
+	.portlet-blogs .trackback-wrap {
+		display: none;
+	}
+
+	.portlet-blogs .post-reply-form {
+		display: block;
+		margin: 5px 0;
+	}
+
+	/* Styling classes added through custom jsp */
+
+	.comment-layout .separator {
+		display: none;
+	}
+
+	.comment-wrap {
+		background: #eef5fa;
+		border: 1px solid #c4ced5;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		border-radius: 3px;
+		/*behavior: url(/vgr-alfa-theme/htc/css3pie.htc);*/
+		margin: 7px 0;
+		padding: 10px;
+		position: relative;
+		width: auto;
+	}
+
+	.comment-wrap-odd {
+		background: #fff;
+	}
+
+	.comment-wrap .user-wrap {
+		color: #555;
+		float: left;
+		font-family: Ubuntu, Arial, Verdana, Helvetica, sans-serif;
+		font-size: 1.2em;
+		margin: 0 20px 0 0;
+		position: relative;
+	}
+
+	.comment-wrap .date-wrap {
+		color: #999;
+		display: block;
+		float: left;
+		font-family: Ubuntu, Arial, Verdana, Helvetica, sans-serif;
+		font-size: 1.1em;
+		position: relative;
+	}
+
+	.comment-wrap .comment-user,
+	.comment-wrap .comment-message {
+		float: none;
+	}
+
+	.comment-user {}
+
+	.comment-message {}
+
+	.comment-wrap .comment-message-body {
+		margin: 5px 0;
+		padding: 5px 0;
+	}
+
+	.portlet-blogs .to-top-column {
+		display: none;
+	}
+
+}

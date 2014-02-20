@@ -1,0 +1,42 @@
+<nav class="top-navigation clearfix" id="topNavigation">
+	<ul class="top-nav-list clearfix">
+		
+		#if($is_signed_in)
+			<li class="top-nav-user">
+				<span>Inloggad som: $user_name</span>
+			</li>
+		#end
+		
+		#if($showDockbar)
+			<li class="top-nav-settings top-nav-settings-show">
+				<a href="#top-nav-settings-show">
+					<span>$topnavSettingsShowText</span>
+				</a>
+			</li>
+			<li class="top-nav-settings top-nav-settings-hide aui-helper-hidden">
+				<a href="#top-nav-settings-hide">
+					<span>$topnavSettingsHideText</span>
+				</a>
+			</li>
+		#end
+		#if($is_signed_in)
+			
+			<li class="top-nav-quick-access aui-helper-hidden">
+				<a href="#top-nav-quick-access">
+					<span>$topnavQuickAccessText</span>
+				</a>
+				#parse ("$full_templates_path/quick_access_navigation.vm")
+			</li>
+			
+			<li class="top-nav-signout last">
+				<a href="$sign_out_url">
+					<span>$sign_out_text</span>
+				</a>
+			</li>			
+		#elseif($show_sign_in_link)
+			<li class="top-nav-signout last">
+                $taglibLiferay.runtime($loginlink_portlet_id, "", $velocityPortletPreferences.toString())
+			</li>
+		#end
+	</ul>
+</nav>

@@ -1,0 +1,329 @@
+@import "aui/alloy-font-awesome/scss/mixins-alloy";
+@import "aui/alloy-font-awesome/scss/variables";
+@import "compass";
+@import "compass/css3/user-interface";
+@import "mixins";
+
+
+.aui {
+
+  /*------- html and body -------*/
+
+  body {
+    background: #dfebf5 url(../images/bg/bg-main.png) 0 0 repeat;
+    color: #333;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+  }
+
+  /*------- wrapper -------*/
+
+  #wrapper {
+  }
+
+  .ie6 #wrapper {
+  }
+
+  .header-inner,
+  .content-inner,
+  .footer-inner {
+    /*
+    margin: 0;
+    padding: 0 40px;
+    margin: 0 auto;
+    max-width: 1200px;
+    */
+  }
+
+  /*------- banner (header) -------*/
+
+  #banner {
+    background: url(../images/bg/bg-hd.png) top center no-repeat;
+  }
+
+  #heading {
+    margin: 0;
+    padding: 15px 0;
+    padding-top: 0;
+  }
+
+  .site-title {
+    position: relative;
+  }
+
+  .site-title,
+  #banner .site-title .logo {
+    display: block;
+    float: left;
+    margin: 0;
+    width: 374px;
+  }
+
+  .site-title-responsive,
+  #banner .site-title-responsive .logo {
+    float: none;
+  }
+
+  #banner .site-title .logo {
+    background: url(../images/logo/logo-vgr-rp.png) 0 0 no-repeat;
+    font-size: 0;
+    height: 41px;
+    text-indent: -9999em;
+  }
+
+  #banner .site-title .logo img {
+    display: none;
+  }
+
+  #banner .site-title-responsive .logo {
+  }
+
+  .site-title-responsive {
+    display: none;
+  }
+
+  .top-navigation {
+    float: right;
+    margin: 0;
+    position: relative;
+  }
+
+  /*------- content -------*/
+
+  #content {
+    min-height: 400px;
+    position: relative;
+  }
+
+  /* Hide node info */
+  .content-inner > .portlet-msg-info {
+    display: none;
+  }
+
+  body > .portlet-msg-info {
+    display: none;
+  }
+
+  #main-content {
+    margin: 15px 0;
+    margin-right: 50px;
+  }
+
+  .has-breadcrumbs #main-content {
+    margin-top: 5px;
+  }
+
+  /*- tools sidebar -*/
+
+  #toolsSidebar {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 46px;
+  }
+
+  /*- Systems help -*/
+
+  a#sidebarHelpTrigger {
+    background: #2c6fa7 url(../images/icons/icon-system-help.png) center center no-repeat;
+    border: 1px solid #255d8c;
+    /*behavior: url(/vgr-alfa-theme/htc/css3pie.htc);*/
+    -moz-border-radius-topleft: 2px;
+    -moz-border-radius-bottomleft: 2px;
+    -webkit-border-radius: 2px 0 0 2px;
+    border-radius: 2px 0 0 2px;
+    margin: 0 0 20px 0;
+    display: block;
+    font-size: 0;
+    height: 50px;
+    text-indent: -9999em;
+    position: relative;
+  }
+
+  a#sidebarHelpTrigger:hover {
+    background-color: #255d8c;
+  }
+
+  /*- notifications -*/
+
+  #notifications {
+    margin: 0 0 20px 0;
+  }
+
+  /*- tyckt till -*/
+
+  #tycktillWrap {
+  }
+
+  #tycktillWrap a {
+    background: #2c6fa7 url(../images/tyck-till/tyck-till-text.png) center center no-repeat;
+    border: 1px solid #255d8c;
+    /*behavior: url(/vgr-alfa-theme/htc/css3pie.htc);*/
+    -moz-border-radius-topleft: 2px;
+    -moz-border-radius-bottomleft: 2px;
+    -webkit-border-radius: 2px 0 0 2px;
+    border-radius: 2px 0 0 2px;
+    display: block;
+    font-size: 0;
+    height: 100px;
+    text-indent: -9999em;
+    position: relative;
+  }
+
+  #tycktillWrap a:hover {
+    background-color: #255d8c;
+  }
+
+  /*------- footer -------*/
+
+  #footer {
+    background: #eef4fa url(../images/bg/footer-bg.png) top left repeat-x;
+    padding: 0;
+    width: 100%;
+  }
+
+  .footer-inner {
+    background: transparent url(../images/bg/footer-bg-shadow.png) top center no-repeat;
+    color: #005095;
+    padding: 20px 0;
+  }
+
+  .footer-content {
+  }
+
+  #footer .logo {
+      background: url(../images/logo/vgr-logo-large-transparent.png) no-repeat scroll 0 0 transparent;
+      display: block;
+    font-size: 0;
+      height: 51px;
+      margin: 0 auto;
+      text-align: center;
+      width: 252px;
+  }
+
+  #footer .logo span {
+      font-size: 0;
+      text-indent: -9999em;
+  }
+
+  .server-info {
+    color: #aaa;
+    padding: 2px 10px;
+    text-align: right;
+  }
+
+
+  /*------- Common elements -------*/
+
+  h1, h2, h3 {
+    font-family: Ubuntu, Arial, Verdana, Helvetica, sans-serif;
+    font-weight: normal;
+    margin: 1em 0 0.4em 0;
+  }
+
+  h1 {
+    color: #005095;
+    font-size: 2.5em;
+    margin: 0.4em 0 0.4em 0;
+  }
+
+  h2 {
+    color: #444;
+    font-size: 1.8em; 
+  }
+
+  h3 {
+    color: #666;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+
+  a,
+  a:visited {
+    color: #2f72a9;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    color: #2f72a9;
+    text-decoration: none;
+  }
+
+  a.rp-link,
+  a.rp-link:visited {
+    background: url(../images/icons/link-icon.png) 0 50% no-repeat;
+    padding-left: 20px;
+    text-decoration: none;
+  }
+
+  a.rp-link:hover {
+    text-decoration: none;
+  }
+
+  a.rp-link:hover span {
+    text-decoration: underline;
+  }
+
+  .rp-link-wrap {
+    margin: 10px 0;
+  }
+
+  .rp-link-wrap-last {
+    margin-bottom: 0;
+  } 
+
+  .rp-link-wrap-left {
+    text-align: left;
+  }
+
+  .rp-link-wrap-right {
+    text-align: right;
+  }
+
+  .text-highlight-1 {
+      color: #000000;
+      background-color: #ff0000;
+  }
+
+  .text-highlight-2 {
+      font-size: 1.2em;
+      font-weight: bold;
+  }
+
+
+  /* ---------- Hidden accessible ---------- */
+
+  .aui #banner h2,
+  .aui #banner h3,
+  .aui .site-breadcrumbs h1,
+  #banner .site-title .site-name {
+    clip: rect(0,0,0,0);
+    position: absolute;
+  }
+
+  .aui .opens-new-window-accessible {
+    background: url(../images/common/open_window.png) no-repeat 0 50%;
+    display: inline-block;
+    font-size: 0;
+    height: 11px;
+    margin-left: 2px;
+    overflow: hidden;
+    text-indent: -9999px;
+    vertical-align: top;
+    width: 11px;
+  }
+
+  body {
+    background: #dfebf5 url(../images/bg/bg-main.png) 0 0 repeat;
+    color: #333;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+  }
+
+}

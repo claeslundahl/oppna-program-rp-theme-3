@@ -1,0 +1,122 @@
+.aui {
+
+	/*----------------------------------------------------------------------
+	=Sandbox - Vega
+	----------------------------------------------------------------------*/
+
+	input[type="text"] {
+		background: #fff;
+		border: 1px solid #C4CED5;
+		padding: 6px;
+	}
+
+	.aui-datepicker-input input[type="text"],
+	input[type="text"].aui-datepicker-input {
+		background-image: url(../images/common/calendar.png);
+		background-position: 98% 50%;
+		background-repeat: no-repeat;
+		padding-right: 40px;
+	}
+
+
+
+	/*------- RP button -------*/
+
+	.rp-button input[type="submit"],
+	.rp-button input[type="cancel"],
+	.rp-button input[type="button"] {
+		background: #c7c6c5;
+		
+		background: #bebdbc url(../images/buttons/button-bg.png) 0 0 repeat-x;
+		
+		border: 1px solid #a5a4a3;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		border-radius: 3px;
+		color: #444;
+		display: block;
+		float: left;
+		/*font-family: Ubuntu, Arial, Verdana, Helvetica, sans-serif;*/
+		font-size: 13px;
+		font-weight: normal;
+		line-height: 1.0;
+		margin-right: 10px;
+		padding: 7px 20px;
+		position: relative;
+		text-align: center;
+		text-shadow: none;
+	}
+
+	.rp-button input[type="submit"] {
+		background: #2865ad url(../images/buttons/button-bg-normal.png) 0 0 repeat-x;
+		border: 1px solid #2f71a8;
+		border-color: #2f71a8 #052a73 #052a73 #2f71a8;
+		color: #fff;  
+	}
+
+	a.rp-link-button {
+		background: #c7c6c5;
+		
+		background: #bebdbc url(../images/buttons/button-bg.png) 0 0 repeat-x;
+		
+		border: 1px solid #a5a4a3;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		border-radius: 3px;
+		color: #444;
+		display: block;
+		float: left;
+		/*font-family: Ubuntu, Arial, Verdana, Helvetica, sans-serif;*/
+		font-size: 13px;
+		font-weight: normal;
+		line-height: 1.0;
+		margin-right: 10px;
+		padding: 7px 20px;
+		position: relative;
+		text-align: center;
+		text-decoration: none;
+		text-shadow: none;	
+	}
+
+	a.rp-link-button-alt {
+		background: #2865ad url(../images/buttons/button-bg-normal.png) 0 0 repeat-x;
+		border: 1px solid #2f71a8;
+		border-color: #2f71a8 #052a73 #052a73 #2f71a8;
+		color: #fff;  
+	}
+
+	/*------- RP simple list -------*/
+
+	ul.rp-simple-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	ul.rp-simple-list li {
+		background: transparent url(../images/icons/icon-arrow.png) left center no-repeat;
+		margin: 10px 0;
+		padding: 4px 0 4px 20px;
+	}
+
+	ul.rp-simple-list li a {
+		font-size: 1.1em;
+		line-height: 1.1;
+		text-decoration: none;
+	}
+
+	/*--------- VEGA -----------*/
+	.vega-box-inner > ol {
+	    list-style-type: decimal;
+	}
+
+	.vega-box-inner > ol > li {
+	    margin-bottom: 12px;
+	}
+
+	.vega-box-inner > ol > li > ol {
+	    list-style-type: lower-alpha;
+	    margin: 0 15px;
+	}
+
+}
