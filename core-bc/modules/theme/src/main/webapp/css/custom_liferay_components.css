@@ -1,0 +1,58 @@
+.aui {
+
+	/*----------------------------------------------------------------------
+	=Liferay Components
+	----------------------------------------------------------------------*/
+
+	.taglib-page-iterator {
+		padding: 10px 0;
+	}
+
+	.taglib-page-iterator .search-results {}
+
+	.taglib-page-iterator .search-pages {}
+
+	.taglib-page-iterator .search-pages .delta-selector {}
+
+	.taglib-page-iterator .search-pages .page-selector {}
+
+	.taglib-page-iterator .search-pages .page-links {}
+
+	.taglib-page-iterator .search-pages .page-links span {
+		display: none;
+	}
+
+	.taglib-page-iterator .search-pages .page-links a {
+		text-decoration: none;
+	}
+
+	.taglib-page-iterator .search-pages .page-links a:hover {
+		text-decoration: underline;
+	}
+
+	.taglib-page-iterator .search-pages .page-links a.previous,
+	.taglib-page-iterator .search-pages .page-links a.next,
+	.taglib-page-iterator .search-pages .page-links a.first,
+	.taglib-page-iterator .search-pages .page-links a.last {
+		background-image: url(../images/paginator/pager-simple-sprite.png);
+		background-repeat: no-repeat;
+		border: none;
+		height: 25px;
+		line-height: 25px;
+		padding: 2px 30px;
+	}
+
+	.taglib-page-iterator .search-pages .page-links a.previous {
+		background-position: 0 0;
+	}
+	.taglib-page-iterator .search-pages .page-links a.next {
+		background-position: 100% -50px;
+	}
+	.taglib-page-iterator .search-pages .page-links a.first {
+		background-position: 0 -100px;
+	}
+	.taglib-page-iterator .search-pages .page-links a.last {
+		background-position: 100% -150px;
+	}
+
+}
