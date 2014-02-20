@@ -8,18 +8,18 @@
 
   /*------- Dockbar -------*/
 
-  .aui .dockbar-split .dockbar .navbar-inner .nav > li {
+  .dockbar-split .dockbar .navbar-inner .nav > li {
     background: #fff url(../images/navigation/top-navigation-bg.png) bottom left repeat-x;
   }
 
-  .aui .dockbar-split .dockbar .navbar-inner .nav > li > a,
-  .aui .dockbar-split .dockbar .navbar-inner .nav > li > a:hover {
+  .dockbar-split .dockbar .navbar-inner .nav > li > a,
+  .dockbar-split .dockbar .navbar-inner .nav > li > a:hover {
     color: #777;
     line-height: 21px;
   }
 
-  .aui .dockbar-split .dockbar .navbar-inner .nav > li.dockbar-user-notifications > a,
-  .aui .dockbar-split .dockbar .navbar-inner .nav > li.dockbar-user-notifications > a:hover {
+  .dockbar-split .dockbar .navbar-inner .nav > li.dockbar-user-notifications > a,
+  .dockbar-split .dockbar .navbar-inner .nav > li.dockbar-user-notifications > a:hover {
     color: #fff;
   }
 
