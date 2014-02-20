@@ -1,0 +1,204 @@
+@import "compass";
+@import "mixins";
+
+$dockbarGradientEnd: #1273C7;
+$dockbarGradientStart: #118ADE;
+
+$dockbarOpenGradientEnd: #0993DD;
+$dockbarOpenGradientStart: #0EA6F9;
+
+@include respond-to(desktop, tablet, phone) {
+	.aui {
+
+		#heading {
+			position: static;
+		}
+
+	}
+}
+
+@include respond-to(desktop) {
+	.aui {}
+}
+
+@include respond-to(phone, tablet) {
+	.aui {
+
+		#heading {
+			@include background-image(linear-gradient($dockbarGradientStart 0%, $dockbarGradientStart 47%, $dockbarGradientEnd 100%));
+			height: 62px;
+
+			.site-title {
+				padding: 0 0 0 20px;
+				.logo {
+					color: #fff;
+					line-height: 62px;
+				}
+			}
+		}
+
+		.cover #heading {
+			background: transparent url(../images/bg/bg-white-60.png) 0 0 repeat;
+
+			.site-title {
+				.logo {
+					color: #0067b1;;
+				}
+			}
+		}
+
+
+	}
+}
+
+@include respond-to(tablet) {
+	.aui {
+
+		/* ---------- Articles ---------- */
+		/* --- Claim --- */
+		body .journal-content-article .claim {
+			font-size: 32px;
+		}
+
+
+
+	}
+}
+
+@include respond-to(phone) {
+	.aui {
+
+		/* ---------- Main Elements ---------- */
+
+		body {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		h1 {
+		  font-size: 24.5px;
+		}
+		h2 {
+		    font-size: 17.5px;
+		}
+		 h3 {
+		  font-size: 14px;
+		}
+		h4 {
+		  font-size: 11.9px;
+		}
+		h5 {
+		  font-size: 11.9px;
+		}
+		h6 {
+		  font-size: 11.9px;
+		}
+
+		/* ---------- Link Btn ---------- */
+
+		.links-wrap {
+			.link-btn {
+				display: block;
+				margin-bottom: 10px;
+			}
+
+			.link-btn + .link-btn {
+				margin-left: 0;
+			}
+		}
+
+		/* ---------- Header ---------- */
+
+		.dockbar {
+			right: 20px;
+		}
+
+		#banner {
+			min-height: 50px;
+		}
+
+		#heading {
+			.site-title {
+				.logo {
+					/*
+					background: #118ade;
+					*/
+					color: #fff;
+					font-size: 20px;
+					font-weight: 400;
+					/*
+					padding: 5px;
+					*/
+				}
+			}
+		}
+
+		.cover #heading {
+			.site-title {
+				.logo {
+					/*
+					background: transparent url(../images/bg/bg-white-60.png) 0 0 repeat;
+					color: #0067b1;
+					*/
+				}
+			}
+		}
+
+
+		/* ---------- Footer ---------- */
+
+		body #footer {
+			margin-left: -20px;
+			margin-right: -20px;
+			padding-left: 20px;
+			padding-right: 20px;		
+		}
+
+
+
+		/* ---------- Diagnosis List ---------- */
+		.diagnosis-list-wrap {
+			ul.diagnosis-list {
+				li {
+					float: none;
+					margin-left: 0;
+					margin-right: 0;
+					width: 100%;
+				}
+			}
+		}
+
+		/* ---------- Articles ---------- */
+		/* --- Claim --- */
+		body .journal-content-article .claim {
+			background-position: 50% 20px;
+
+			padding: 10px;
+			padding-top: 160px;
+			text-align: center;
+
+			width: auto;
+
+
+			font-size: 32px;
+			line-height: 42px;
+
+			&:after {
+				display: none;
+			}
+		}
+
+
+
+		/* --- Asset Publisher --- */
+
+		.portlet-asset-publisher {
+			.taglib-header {
+				h3.header-title {
+					font-size: 24.5px;
+				}
+			}
+		}
+
+	}
+}
