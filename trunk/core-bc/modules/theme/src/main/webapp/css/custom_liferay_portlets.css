@@ -55,10 +55,12 @@
 		font-family: Ubuntu, Arial, Verdana, Helvetica, sans-serif;
 		font-size: 1.3em;
 		font-weight: normal;
+		line-height: 1.0;
 		padding: 7px 10px;
 	}
 
-	.portlet-title .icon {
+	.portlet-title .icon,
+	.portlet-title img {
 		display: none;
 	}
 
