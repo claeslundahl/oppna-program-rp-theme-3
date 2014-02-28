@@ -827,15 +827,6 @@
 		overflow: hidden;
 	}
 
-	/*------- RP Confirmation Plugin -------*/
-
-	.js .requires-confirmation {
-		visibility: hidden;
-	}
-
-	.js .requires-confirmation-active {
-	}
-
 	/*-- RP Confirmation Plugin --*/
 
 	.rp-confirm-dialog .aui-dialog-hd {
