@@ -1042,6 +1042,10 @@
 		padding: 0 3px;
 	}
 
+    .notifications-wrap .portlet-borderless-bar {
+        display: none;
+    }
+
 	ul.notifications-list {
 		list-style-type: none;
 		margin: 0;

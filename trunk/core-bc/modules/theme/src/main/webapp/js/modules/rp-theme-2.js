@@ -30,7 +30,7 @@ AUI().add('rp-theme-2',function(A) {
                         
                         instance._initBreadcrumbs();
                         
-                        //instance._initActionConfirmation();
+                        instance._initActionConfirmation();
                         instance._initNavigationButton();
                         instance._initMainNavigation();
                         //instance._initOverlayLinks();
@@ -270,6 +270,7 @@ AUI().add('rp-theme-2',function(A) {
         */
             'aui-base',
             'event',
+            'rp-action-confirmation-plugin',
             'rp-navigation-button',
             'rp-news-carousel',
             'rp-placeholder-plugin',

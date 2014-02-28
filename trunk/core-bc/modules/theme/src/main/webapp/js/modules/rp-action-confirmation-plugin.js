@@ -73,45 +73,47 @@ AUI.add('rp-action-confirmation-plugin', function(A) {
 				e.halt();
 				
 				var width = 300;
-				var height = 150;
-				
-				var dialog = new A.Dialog({
-					bodyContent: instance.msg,
-					centered: true,
-					cssClass: 'rp-confirm-dialog',
-					align: { node: null, points: [A.WidgetPositionAlign.TC, A.WidgetPositionAlign.TC] },
-					destroyOnClose: true,
-					modal: true,
-					title: TEXT_DEFAULT_TITLE,
-					resizable: false,
-					height: height,
-					width: width,
-					buttons: [{
-						text: 'Avbryt',
-						handler: function() {
-							instance._haltAction();
-						}
-					},{
-						text: 'Ja',
-						handler: function() {
-							instance._confirmAction();
-						}
-					}]
-				});
-				
-				dialog.render();
+
+				var dialog = new A.Modal(
+                    {
+                        bodyContent: instance.msg,
+                        centered: true,
+                        headerContent: TEXT_DEFAULT_TITLE,
+                        modal: true,
+                        toolbars: {
+                            footer: [
+                                {
+                                    label: 'Ja',
+                                    on: {
+                                        click: function() {
+                                            instance._confirmAction();
+                                        }
+                                    }
+                                }, {
+                                    label: 'Avbryt',
+                                    on: {
+                                        click: function() {
+                                            instance._haltAction();
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        width: width,
+                        zIndex: 1000
+                    }
+                );
+
+                dialog.render();
 
 				instance.dialog = dialog;
-
-				// Listen for when the iframe is available to be modified
-				//A.on('available', instance._onIframeAvailable, '#' + iframeId, null, null, instance);
 			},
 			
 			_confirmAction: function () {
 				var instance = this;
 				
 				// Should now continue with action
-				instance.dialog.close();
+				instance.dialog.hide();
 				if(instance.url != '') {
 					window.location.href = instance.url;	
 				}
@@ -119,7 +121,7 @@ AUI.add('rp-action-confirmation-plugin', function(A) {
 			
 			_haltAction: function () {
 				var instance = this;
-				instance.dialog.close();
+				instance.dialog.hide();
 			},
 
 			_someFunction: function() {}
@@ -133,7 +135,7 @@ AUI.add('rp-action-confirmation-plugin', function(A) {
 	}, '1.0.1' ,{
 		requires:[
 			'aui-component',
-			'aui-dialog',
+            'aui-modal',
 			'plugin'
 		]
 	}
