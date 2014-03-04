@@ -78,7 +78,7 @@ AUI().add('rp-news-carousel',function(A) {
                             nodeMenuItemSelector: 'li'
                         }).render();
 
-                        newsBox.all('a.news-box-link').removeClass('aui-helper-hidden');
+                        newsBox.all('a.news-box-link').removeClass('helper-hidden');
                         newsBox.addClass('news-box-js');
                         
                         // Bind window size change event

@@ -19,7 +19,14 @@
 $theme.include($body_top_include)
 
 #if ($is_signed_in)
-	#dockbar()
+    <div class="top-wrap">
+        <div class="dockbar-wrap">
+            #dockbar()
+        </div>
+        <div>
+            #parse ("$full_templates_path/top_navigation.vm")
+        </div>
+    </div>
 #end
 
 <div class="container-fluid" id="wrapper">
@@ -37,9 +44,7 @@ $theme.include($body_top_include)
 				#end
 			</h1>
 
-			#*
-			#parse ("$full_templates_path/top_navigation.vm")
-			*#
+##			#parse ("$full_templates_path/top_navigation.vm")
 
 			<h2 class="page-title">
 				<span>$the_title</span>
