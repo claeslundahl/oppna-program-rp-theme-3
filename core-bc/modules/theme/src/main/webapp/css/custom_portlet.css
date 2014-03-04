@@ -542,13 +542,13 @@
 		margin: 0 0.2em 0 0;
 	}
 
-	.bfr-wrap .aui-tab-active {
+	.bfr-wrap .tab-selected {
 		background: #2c6fa7;
 		border-color: #243356;
 		color: #fff;
 	}
 
-	.bfr-wrap .aui-tab-active:after {
+	.bfr-wrap .tab-selected:after {
 		border: 0;
 		bottom: 0;
 		content: '';
@@ -1015,7 +1015,7 @@
 
 	/* -- Overlay -- */
 
-	.notifications-overlay .aui-overlay-content {
+	.notifications-overlay .overlay-content {
 		background: #e4edf9;
 		background: #fff;
 		-moz-border-radius: 3px 0 0 3px;

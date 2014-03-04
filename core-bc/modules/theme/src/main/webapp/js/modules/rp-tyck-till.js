@@ -11,7 +11,7 @@ AUI().add('rp-tyck-till',function(A) {
         NS = 'rp-tyck-till',
         
         CSS_DIALOG = 'rp-dialog tycktill-dialog',
-        CSS_HIDDEN = 'aui-helper-hidden'
+        CSS_HIDDEN = 'helper-hidden'
     ;
         
     var TPL_IFRAME = '<div class="iframe-wrap"><iframe src="{iframeSrc}" width="100%" height="100%"></iframe></div>'

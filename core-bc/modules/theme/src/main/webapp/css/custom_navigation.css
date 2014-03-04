@@ -227,7 +227,7 @@
     margin-top: -3px;
   }
 
-  .quick-access-overlay .aui-overlay-content {
+  .quick-access-overlay .overlay-content {
     background: #fff;
     /*behavior: url(/vgr-alfa-theme/htc/css3pie.htc);*/
     -moz-border-radius: 3px 0 0 3px;
@@ -275,7 +275,7 @@
 
   .quick-access-nav-hd .filter-wrap {
     float: left;
-    width: 600px;
+    width: 700px;
   }
 
   .quick-access-nav-hd a.close {
@@ -296,6 +296,15 @@
   .quick-access-nav-hd .filter-wrap span.help-text {
     display: inline;
     padding-right: 10px;
+  }
+
+  .top-wrap > div {
+      float: right;
+  }
+
+  .top-wrap .dockbar-wrap {
+      height: 43px;
+      width: 450px;
   }
 
   ul.quick-access-nav-list {

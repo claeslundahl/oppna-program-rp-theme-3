@@ -221,6 +221,7 @@
 		font-family: Ubuntu, Arial, Verdana, Helvetica, sans-serif;
 		font-size: 1.1em;
 		font-weight: bold;
+        overflow: hidden;
 		padding: 7px 10px;
 		position: relative;
 		text-decoration: none;
@@ -232,7 +233,7 @@
 		color: #fff;
 	}
 
-	.vgr-tabs .aui-tab-active:after {
+	.vgr-tabs .tab-selected:after {
 		border: none;
 		bottom: 0;
 		content: '';
@@ -241,14 +242,14 @@
 		z-index: 0;
 	}
 
-	.vgr-tabs .aui-tab-active a,
-	.vgr-tabs .aui-tab-active a:link,
-	.vgr-tabs .aui-tab-active a:hover {
+	.vgr-tabs .tab-selected a,
+	.vgr-tabs .tab-selected a:link,
+	.vgr-tabs .tab-selected a:hover {
 		background: #548332 url(../images/navigation/navigation-bg-active.png) top left repeat-x;
 		color: #fff;
 	}
 
-	.vgr-tabs .aui-tab-active a::after {
+	.vgr-tabs .tab-selected a::after {
 		content: "";
 		position: absolute;
 		bottom: -10px;
@@ -539,7 +540,7 @@
 
 	/* -- Overlay -- */
 
-	.system-help-overlay .aui-overlay-content {
+	.system-help-overlay .overlay-content {
 		background: #fff;
 		-moz-border-radius: 3px 0 0 3px;
 		-webkit-border-radius: 3px 0 0 3px;

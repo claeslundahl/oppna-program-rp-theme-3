@@ -3,7 +3,7 @@
 	$taglibLiferay.runtime($rp_breadcrumbs_portlet_id, "", $velocityPortletPreferences.toString())
 	#set ($VOID = $velocityPortletPreferences.reset())
 #else
-    <nav class="site-breadcrumbs aui-helper-hidden_ clearfix" id="breadcrumbs">
+    <nav class="site-breadcrumbs helper-hidden_ clearfix" id="breadcrumbs">
     	<div class="breadcrumbs-list-wrap clearfix">
     		<div class="breadcrumbs-label">
     			$breadcrumbs_label:

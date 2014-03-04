@@ -15,7 +15,7 @@ AUI().add('rp-quick-access-nav',function(A) {
         TRIGGER = 'trigger',
         
         CSS_ACTIVE = 'active',
-        CSS_HIDDEN = 'aui-helper-hidden',
+        CSS_HIDDEN = 'helper-hidden',
         CSS_QUICK_ACCESS_NAV_OVERLAY = 'quick-access-overlay'
     ;
         
@@ -159,7 +159,7 @@ AUI().add('rp-quick-access-nav',function(A) {
                     	
                     	var quickAccessWrap = instance.get(QUICK_ACCESS_NAV_LIST_WRAP);
                     	var filterInput = quickAccessWrap.one(instance.get(FILTER_INPUT_ID));
-                    	filterNodes = quickAccessWrap.all('ul a');
+                    	filterNodes = filterInput.ancestor('.yui3-widget-bd').all('ul a');
                     	
                     	instance.liveSearch = new A.LiveSearch({
                     		input: filterInput,
@@ -190,8 +190,7 @@ AUI().add('rp-quick-access-nav',function(A) {
                         				}
                     				}
                     			}
-                    			
-                    			
+
                     			listNode.show().setAttribute('nodeStatus', 'show');
                     		},
 
@@ -233,7 +232,6 @@ AUI().add('rp-quick-access-nav',function(A) {
                     	markupPrototypeNode.remove();
                     	markupPrototypeNode.destroy(true);
                     	
-                    	/*
                     	instance.overlayPanel = new A.OverlayContextPanel({
                     		align: {
                     			node: triggerList,
@@ -250,26 +248,7 @@ AUI().add('rp-quick-access-nav',function(A) {
                     		trigger: trigger,
                     		width: headingWidth
                 		});
-                		*/
-                    	
-                    	instance.overlayPanel = new A.Popover({
-                    		align: {
-                    			node: triggerList,
-                    			points: [A.WidgetPositionAlign.TR, A.WidgetPositionAlign.BR]
-                    		},
-                    		anim: true,
-                    		bodyContent: bodyContent,
-                    		boundingBox: '#quick-access-overlay-context-panel',
-                    		cancellableHide: true,
-                    		cssClass: CSS_QUICK_ACCESS_NAV_OVERLAY,
-                    		hideDelay: 200,
-                    		hideOnDocumentClick: true,
-                    		showArrow: false,
-                    		trigger: trigger,
-                    		width: headingWidth
-                		});
-                    	
-                    	
+
                     	instance.overlayPanel.render();
                     	
                     	instance.overlayMask = new A.OverlayMask().render();
@@ -365,9 +344,9 @@ AUI().add('rp-quick-access-nav',function(A) {
     },1, {
         requires: [
             'aui-base',
-            'aui-live-search',
+            'aui-live-search-deprecated',
             'aui-loading-mask',
-            //'aui-overlay',
+            'aui-overlay-context-panel-deprecated',
             'aui-popover',
             'node-event-simulate',
             'substitute'

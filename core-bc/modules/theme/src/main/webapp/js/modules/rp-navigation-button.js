@@ -9,7 +9,7 @@ AUI().add('rp-navigation-button',function(A) {
         NAVIGATION_LIST = 'navigationList',
         TRIGGER = 'trigger',
         
-        CSS_HIDDEN = 'aui-helper-hidden',
+        CSS_HIDDEN = 'helper-hidden',
         CSS_SELECTED = 'selected',
         CSS_TRIGGER_ACTIVE = 'menu-active'
     ;
