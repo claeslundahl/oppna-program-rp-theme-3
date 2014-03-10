@@ -1173,6 +1173,17 @@ text-decoration: none;
 
 	/* ----------------- VAP Portlets common ----------------------- */
 
+    .search-input-wrap .control-group {
+        background: #fff;
+        border: 1px solid #c4ced5;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        margin: 0;
+        position: relative;
+        width: 88%;
+    }
+
 	.vap-button input[type="submit"],
 	a.vap-link-button,
 	a.vap-link-button:visited {
@@ -1268,30 +1279,16 @@ text-decoration: none;
 	}
 
 	.vap-search-input {
-		
-		margin-right: 85px;
-	}
-
-	.vap-search-input > .aui-field-content {
-		background: #fff;
-		border: 1px solid #c4ced5;
-		-moz-border-radius: 4px;
-		-webkit-border-radius: 4px;
-		border-radius: 4px;
-		position: relative;
-		width: 99%;	
-	}
-
-	.vap-search-input > .aui-field-content > .aui-field-element {
-		display: block;
-		padding: 4px;
-		overflow: hidden;
+        height: 41px;
+        margin: 0 85px 0 0;
 	}
 
 	.vap-search-button {
 		float: right;
+        height: 42px;
+        min-width: 50px;
 		position: relative;
-		width: 80px;
+		width: 10%;
 	}
 
 	.vap-search-input .aui-combobox-content .aui-field-content {
@@ -1309,7 +1306,7 @@ text-decoration: none;
 	}
 
 	.vap-search-wrap input[type="text"] {
-		background: #fff url(../images/vap/search-icon.png) 4px 2px no-repeat;
+		background: #fff url(../images/vap/search-icon.png) 6px 8px no-repeat;
 		border: none;
 		-moz-box-sizing: border-box;
 		-ms-box-sizing: border-box;
@@ -1318,6 +1315,8 @@ text-decoration: none;
 		box-sizing: border-box;	
 		display: block;
 		font-size: 16px;
+        height: 41px;
+        margin: 0;
 		padding: 6px;
 		padding-left: 41px;
 		width: 100%;
