@@ -26,6 +26,11 @@
   .ie6 #wrapper {
   }
 
+  .container-fluid {
+      margin: 0 auto;
+      max-width: 1200px;
+  }
+
   .header-inner,
   .content-inner,
   .footer-inner {
@@ -108,7 +113,6 @@
 
   #main-content {
     margin: 15px 0;
-    margin-right: 50px;
   }
 
   .has-breadcrumbs #main-content {
@@ -120,7 +124,7 @@
   #toolsSidebar {
     position: absolute;
     right: 0;
-    top: 10px;
+    top: 175px;
     width: 46px;
   }
 

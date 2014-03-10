@@ -65,7 +65,7 @@ AUI().add('rp-news-carousel',function(A) {
                         
                         var newsBoxMenu = newsBox.ancestor().one('.news-box-menu');
                         
-                        newsBoxMenu.show();
+                        newsBoxMenu.removeClass('helper-hidden');
                         
                         instance.newsBoxCarousel = new A.Carousel({
                             intervalTime: 20,

@@ -43,7 +43,7 @@
 	.news-box a.news-box-link {
 		background: #fff;
 		cursor: pointer;
-		display: block;
+		display: none;
 		height: 220px;
 		margin: 0;
 		overflow: hidden;
@@ -51,10 +51,14 @@
 		width: 100%;
 	}
 
-	.news-box .news-box-link-content {
+    .news-box-js .yui3-carousel-item.yui3-carousel-item-active {
+        display: block;
+        z-index: 3;
+    }
+
+    .news-box .news-box-link-content {
 		padding: 10px;
 	}
-
 
 	.news-box-image-wrap {
 		float: left;
@@ -77,6 +81,7 @@
 	.news-box a h2 {
 		color: #555;
 		font-size: 18px;
+        line-height: 25px;
 		margin: 5px 0;
 		padding: 0;
 	}
@@ -106,10 +111,6 @@
 		top: 0;
 	}
 
-	.news-box-js .aui-carousel-item {
-		opacity: 0;
-	}
-
 	.news-box .aui-carousel menu {
 	    background: #2c6fa7;
 	    bottom: 0px;
@@ -121,19 +122,19 @@
 	    z-index: 4;
 	}
 
-	.news-box-js .aui-carousel-menu-item {
+	.news-box .yui3-carousel-menu-item {
 		border: 1px solid transparent;
 	}
 
-	.news-box-js .aui-carousel-menu-active {
+    .news-box .yui3-carousel-menu-active {
 		border: 1px solid #474A4B;
 	}
 
-	.news-box-js .aui-carousel-menu-pause,
-	.news-box-js .aui-carousel-menu-play,
-	.news-box-js .aui-carousel-menu-prev,
-	.news-box-js .aui-carousel-menu-next {
-		/*display: none;*/
+	.news-box-menu .yui3-carousel-menu-pause,
+	.news-box-menu .yui3-carousel-menu-play,
+	.news-box-menu .yui3-carousel-menu-prev,
+	.news-box-menu .yui3-carousel-menu-next {
+		display: none;
 	}
 
 
@@ -167,7 +168,7 @@
 		text-indent: -9999em;
 	}
 
-	ul.news-box-menu li.aui-carousel-menu-active {
+	ul.news-box-menu li.yui3-carousel-menu-active {
 		background: #fff;
 	}
 
