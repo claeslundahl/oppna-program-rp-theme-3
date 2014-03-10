@@ -8,10 +8,10 @@ div.portlet-column {
 	float: left;
 }
 
-div.w70 { width: 69.9%; }
-div.w50 { width: 49.9%; }
-div.w33 { width: 33.3%; }
-div.w30 { width: 29.9%; }
+div.w70 { width: 69%; }
+div.w50 { width: 49%; }
+div.w33 { width: 33%; }
+div.w30 { width: 29%; }
 
 /* ---------- System Page ---------- */
 
