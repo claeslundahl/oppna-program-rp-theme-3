@@ -85,6 +85,13 @@
   #banner .site-title-responsive .logo {
   }
 
+  .label {
+      background-color: inherit;
+      color: inherit;
+      font-weight: bold;
+      text-shadow: inherit;
+  }
+
   .site-title-responsive {
     display: none;
   }
