@@ -69,7 +69,18 @@ AUI().add('rp-tyck-till',function(A) {
 							iframeSrc: dialogURL
 						});
                     	
-                    	
+
+                    	var dialog = new A.Modal(
+                             {
+                               bodyContent: bodyContent,
+                               centered: true,
+                               headerContent: instance.messages.dialog.title,
+                               modal: true,
+                               render: '#modal',
+                               width: instance.get(DIALOG_WIDTH)
+                             }
+                           ).render();
+/*
     					var dialog = new A.Dialog({
     						bodyContent: bodyContent,
     						centered: true,
@@ -91,7 +102,7 @@ AUI().add('rp-tyck-till',function(A) {
     			                        }
     			            ]
     					}).render();
-    					
+*/
     					dialog.on('render', instance._onDialogRender, instance, dialog);
                     	
     					dialog.after('close', function(e) {
