@@ -396,8 +396,8 @@
 		margin-bottom: 10px;
 	}
 
-	.rp-box .rp-table-filters .aui-field-wrapper,
-	.rp-table-filters .aui-field-wrapper {
+	.rp-box .rp-table-filters .field-wrapper,
+	.rp-table-filters .field-wrapper {
 		clear: none; 
 		float: left;
 		margin: 10px 20px 10px 0;
