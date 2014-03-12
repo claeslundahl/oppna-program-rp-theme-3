@@ -6,46 +6,99 @@
 
 .aui {
 
-  /*------- Dockbar -------*/
+    /*------- Dockbar -------*/
 
-  .dockbar-split .dockbar .navbar-inner .nav > li {
-    background: #fff url(../images/navigation/top-navigation-bg.png) bottom left repeat-x;
+    .dockbar-split .dockbar,
+    .dockbar-split .dockbar.navbar-static-top .collapse .nav-account-controls {
+        position: static;
+    }
+
+  .dockbar-split .dockbar .navbar-inner {
+    background: none;
+
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+
+    width: auto
   }
 
-  .dockbar-split .dockbar .navbar-inner .nav > li > a,
-  .dockbar-split .dockbar .navbar-inner .nav > li > a:hover {
-    color: #777;
-    line-height: 21px;
+    .dockbar-split .dockbar .navbar-inner .nav > li {
+        background: #fff url(../images/navigation/top-navigation-bg.png) bottom left repeat-x;
+        background: none;
+    }
+
+    .dockbar-split .dockbar .navbar-inner .nav > li > a,
+    .dockbar-split .dockbar .navbar-inner .nav > li > a:hover {
+        color: #777;
+        line-height: 21px;
+    }
+
+    .dockbar-split .dockbar .navbar-inner .nav > li.dockbar-user-notifications > a,
+    .dockbar-split .dockbar .navbar-inner .nav > li.dockbar-user-notifications > a:hover {
+        color: #fff;
+    }
+
+    /*------- Top navigation -------*/
+
+  .top-wrap {
+      background: #fff url(../images/navigation/top-navigation-bg.png) bottom left repeat-x;
+      -moz-border-radius: 3px;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+
+      -moz-box-shadow: 0px 1px 4px 0px #cccccc;
+      -webkit-box-shadow: 0px 1px 4px 0px #cccccc;
+      box-shadow: 0px 1px 4px 0px #cccccc;
+
+      border: 1px solid #d5e0ea;
+
+      float: right;
+      list-style: none;
+      margin: 0;
+      padding: 5px;
+      position: relative;
+
+      padding: 0 5px;
+
   }
 
-  .dockbar-split .dockbar .navbar-inner .nav > li.dockbar-user-notifications > a,
-  .dockbar-split .dockbar .navbar-inner .nav > li.dockbar-user-notifications > a:hover {
-    color: #fff;
-  }
+    ul.top-nav-list {
+      background: #fff url(../images/navigation/top-navigation-bg.png) bottom left repeat-x;
+      -moz-border-radius: 3px;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
 
-  /*------- Top navigation -------*/
-
-  ul.top-nav-list {
-    background: #fff url(../images/navigation/top-navigation-bg.png) bottom left repeat-x;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-
-    -moz-box-shadow: 0px 1px 4px 0px #cccccc;
-    -webkit-box-shadow: 0px 1px 4px 0px #cccccc;
-    box-shadow: 0px 1px 4px 0px #cccccc;  
+      -moz-box-shadow: 0px 1px 4px 0px #cccccc;
+      -webkit-box-shadow: 0px 1px 4px 0px #cccccc;
+      box-shadow: 0px 1px 4px 0px #cccccc;
       
-    /*behavior: url(/vgr-alfa-theme/htc/css3pie.htc);*/ 
+      /*behavior: url(/vgr-alfa-theme/htc/css3pie.htc);*/
     
-    border: 1px solid #d5e0ea;
+      border: 1px solid #d5e0ea;
     
-    float: right;
-    list-style: none;
-    margin: 0;
-    padding: 5px;
-    position: relative;
+      float: right;
+      list-style: none;
+      margin: 0;
+      padding: 5px;
+      position: relative;
     
-    padding: 0 5px;
+      padding: 0 5px;
+
+      background: none;
+
+      -moz-border-radius: 0px;
+      -webkit-border-radius: 0px;
+      border-radius: 0px;
+
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+
+      border: none;
+
+      float: left;
+
   }
 
   ul.top-nav-list li {
@@ -407,5 +460,80 @@
   #breadcrumbs h1 {
     margin: 5px 0;
   }
+
+    /*------- Site Navigation -------*/
+
+    ul.site-navigation-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul.site-navigation-list > li {
+        display: -moz-inline-stack;
+        display: inline-block;
+        list-style: none;
+        min-height: 150px;
+        min-width: 250px;
+        padding: 0;
+        vertical-align: top;
+        width: 49.0%;
+    }
+
+    .aui-w30 ul.site-navigation-list > li {
+        width: 100%;
+    }
+
+    .ie7 ul.site-navigation-list > li {
+        display: inline;
+        zoom: 1;
+    }
+
+    ul.site-navigation-list > li .rp-box {
+        margin: 10px;
+    }
+
+    ul.site-navigation-list .nav-item-top {
+        background: transparent url(../images/vega/vega-navigation-sprite.png) 0 0 no-repeat;
+        margin-bottom: 5px;
+        min-height: 45px;
+        padding-left: 55px;
+    }
+
+    ul.site-navigation-list .vega-manage-files .nav-item-top { background-position: 0 -300px; }
+    ul.site-navigation-list .vega-analyze-data .nav-item-top { background-position: 0 -600px; }
+    ul.site-navigation-list .vega-file-maintenance .nav-item-top { background-position: 0 -900px; }
+    ul.site-navigation-list .vega-documentation .nav-item-top { background-position: 0 -1200px; }
+
+    ul.site-navigation-list a {
+        color: #333;
+        text-decoration: none;
+    }
+
+    ul.site-navigation-list .nav-item-title {
+        color: #333;
+        display: block;
+        font-family: Ubuntu, Arial, Verdana, Helvetica, sans-serif;
+        font-size: 1.2em;
+        text-decoration: none;
+    }
+
+    ul.site-navigation-list ul {
+        list-style: none;
+        margin: 0 0 0 55px;
+        padding: 0;
+    }
+
+    ul.site-navigation-list ul li {
+        list-style: none;
+        margin: 5px 0;
+        padding: 0;
+    }
+
+    ul.site-navigation-list ul li a {
+        background: transparent url(../images/icons/link-icon.png) 0 50% no-repeat;
+        display: block;
+        padding-left: 20px;
+    }
 
 }

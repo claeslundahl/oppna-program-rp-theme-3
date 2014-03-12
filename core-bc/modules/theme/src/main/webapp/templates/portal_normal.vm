@@ -18,20 +18,10 @@
 
 $theme.include($body_top_include)
 
-#if ($is_signed_in)
-    <div class="top-wrap">
-        <div class="dockbar-wrap">
-            #dockbar()
-        </div>
-        <div>
-            #parse ("$full_templates_path/top_navigation.vm")
-        </div>
-    </div>
-#end
-
 <div class="container-fluid" id="wrapper">
+
 	<header id="banner" role="banner">
-		<div id="heading">
+		<div id="heading" class="clearfix">
 			<h1 class="site-title">
 				<a class="$logo_css_class" href="$site_default_url" title="#language_format ("go-to-x", [$site_name])">
 					<img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width" />
@@ -49,6 +39,18 @@ $theme.include($body_top_include)
 			<h2 class="page-title">
 				<span>$the_title</span>
 			</h2>
+
+            #if ($is_signed_in)
+                <div class="top-wrap">
+                    <div class="dockbar-wrap">
+                        #dockbar()
+                    </div>
+                    <div>
+                        #parse ("$full_templates_path/top_navigation.vm")
+                    </div>
+                </div>
+            #end
+
 		</div>
 
 		#if (!$is_signed_in)
