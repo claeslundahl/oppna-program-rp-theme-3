@@ -14,7 +14,7 @@
 	<name>RP Bootstrap Theme</name>
 	<version>1.13-SNAPSHOT</version>
 	<build>
-		<finalName>rp-boostrap-theme</finalName>
+		<finalName>rp-bootstrap-theme</finalName>
 		<plugins>
 			<plugin>
 				<groupId>com.liferay.maven.plugins</groupId>
