@@ -317,14 +317,14 @@ text-decoration: none;
 	}
 
 
-	.ifeed-jspon-container .aui-field-wrapper {}
+	.ifeed-jspon-container .field-wrapper {}
 
 	/* Clearfix style clearing */
 
-	.ifeed-jspon-container .aui-field-wrapper-content:after{clear:both;content:'.';display:block;visibility:hidden;height:0}
-	.ifeed-jspon-container .aui-field-wrapper-content{display:inline-block}
-	* html .ifeed-jspon-container .aui-field-wrapper-content{height:1%}
-	.ifeed-jspon-container .aui-field-wrapper-content{display:block}
+	.ifeed-jspon-container .field-wrapper-content:after{clear:both;content:'.';display:block;visibility:hidden;height:0}
+	.ifeed-jspon-container .field-wrapper-content{display:inline-block}
+	* html .ifeed-jspon-container .field-wrapper-content{height:1%}
+	.ifeed-jspon-container .field-wrapper-content{display:block}
 
 
 	.ifeed-jsonp-settings .aui-field-multi,
