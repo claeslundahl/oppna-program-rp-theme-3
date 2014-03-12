@@ -221,21 +221,27 @@ AUI().add('rp-quick-access-nav',function(A) {
                     	
                     	var triggerList = trigger.ancestor('ul');
                     	var headingNode = A.one('#heading');
-                    	
+
+                        var topWrapNode = trigger.ancestor('.top-wrap');
+
                         var headingWidthStr = headingNode.getComputedStyle('width').replace('px', '');
                         var headingWidth = parseInt(headingWidthStr);
-                    	
+
                     	var markupPrototypeNode = instance.get(QUICK_ACCESS_NAV_LIST_WRAP);
 
                     	var bodyContent = markupPrototypeNode.html();
 
                     	markupPrototypeNode.remove();
                     	markupPrototypeNode.destroy(true);
-                    	
+
+                        var alignPoints = [A.WidgetPositionAlign.TR, A.WidgetPositionAlign.BR];
+                        alignPoints = [A.WidgetPositionAlign.TC, A.WidgetPositionAlign.BC];
+                        alignPoints = ['tc', 'bc'];
+
                     	instance.overlayPanel = new A.OverlayContextPanel({
                     		align: {
-                    			node: triggerList,
-                    			points: [A.WidgetPositionAlign.TR, A.WidgetPositionAlign.BR]
+                    			node: headingNode,
+                    			points: alignPoints
                     		},
                     		anim: true,
                     		bodyContent: bodyContent,
@@ -250,7 +256,7 @@ AUI().add('rp-quick-access-nav',function(A) {
                 		});
 
                     	instance.overlayPanel.render();
-                    	
+
                     	instance.overlayMask = new A.OverlayMask().render();
                     	
                     	instance._initLiveSearch();
@@ -318,7 +324,7 @@ AUI().add('rp-quick-access-nav',function(A) {
                     
                     _onQuickAccessOverlayShow: function(e) {
                     	var instance = this;
-                    	
+
                     	var overlay = e.currentTarget;
                     	
                     	var triggers = overlay.get('trigger');
