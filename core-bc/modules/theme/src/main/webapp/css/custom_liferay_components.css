@@ -4,6 +4,12 @@
 	=Liferay Components
 	----------------------------------------------------------------------*/
 
+    .portlet-msg-error,
+    .portlet-msg-info,
+    .portlet-msg-success {
+        display: block;
+    }
+
 	.taglib-page-iterator {
 		padding: 10px 0;
 	}

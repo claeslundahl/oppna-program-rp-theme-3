@@ -265,6 +265,16 @@
     text-decoration: none;
   }
 
+  /* Otherwise Bootstrap is shipped with .modal-body {max-height: 400px}*/
+  .modal-body {
+      max-height: none;
+  }
+
+  .portlet-borderless-bar,
+  .portlet-topper-toolbar{
+      z-index: 3;
+  }
+
   a.rp-link,
   a.rp-link:visited {
     background: url(../images/icons/link-icon.png) 0 50% no-repeat;
@@ -328,6 +338,10 @@
     text-indent: -9999px;
     vertical-align: top;
     width: 11px;
+  }
+
+  .yui3-widget-mask {
+      z-index: 500;
   }
 
   body {
