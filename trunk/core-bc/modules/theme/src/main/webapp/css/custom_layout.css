@@ -1,80 +1,72 @@
-.portlet-layout {
-	border-collapse: inherit;
-	display: block;
-}
+@import "compass";
+@import "compass/css3/user-interface";
+@import "mixins";
 
-div.portlet-column {
-	display: block;
-	float: left;
-}
+.aui {
 
-div.w70 { width: 69%; }
-div.w50 { width: 49%; }
-div.w33 { width: 33%; }
-div.w30 { width: 29%; }
+    /* ---------- System Page ---------- */
 
-/* ---------- System Page ---------- */
+    .rp-columns-system-page {
 
-.rp-columns-system-page div.w70 {
-	width: 100%;
-}
+        .portlet-column {}
 
-.rp-columns-system-page div.w30 {
-	display: none;
-}
+        .rp-sidebar {
+            display: none;
+        }
 
-.portlet-column-content {
-	padding: 5px 15px;
-}
+    }
 
-.portlet-column-content-first {
-	padding-left: 0;
-}
+    .rp-admin.controls-visible {
+        .rp-columns-system-page {
 
-.portlet-column-content-last  {
-	padding-right: 0;
-}
+            @include pie-clearfix();
 
-.rp-admin.controls-visible .rp-columns-system-page div.aui-w70 {
-	width: 69.9%;
-}
+            .portlet-column {
+                width: 65.81197%%; /* Same as span8 */
+            }
 
-.rp-admin.controls-visible .rp-columns-system-page div.aui-w30 {
-	display: block;
-	width: 29.9%;
-}
+            .rp-sidebar {
+                display: block;
+                width: 31.62393%; /* Same as span4 */
+            }
 
-/* ---------- RP Columns 1-2 type-1 ---------- */
-
-.rp-columns-1-2-type-1 {}
-
-.rp-columns-1-2-type-1 .rp-main-layout-wrap {
-	float: none;
-	width: 100%;
-}
-
-.rp-columns-1-2-type-1 div.rp-sidebar {
-	display: none;
-}
-
-.rp-admin.controls-visible .rp-columns-1-2-type-1 .rp-main-layout-wrap {
-	float: left;
-	width: 69.9%;
-}
-
-.rp-admin.controls-visible .rp-columns-1-2-type-1 div.rp-sidebar {
-	display: block;
-	width: 29.9%;
-}
+        }
+    }
 
 
-/* ---------- RP Columns VAP start page ---------- */
+    /* ---------- RP Columns 1-2 type-1 ---------- */
 
-.signed-out .rp-columns-vap-start-page #column-2 {
-	display: none;
-}
+    .rp-columns-1-2-type-1 {}
 
-.signed-out .rp-columns-vap-start-page #column-3,
-.signed-out .rp-columns-vap-start-page #column-4 {
-	width: 49.9%;
+    .rp-columns-1-2-type-1 .rp-main-layout-wrap {
+        float: none;
+        width: 100%;
+    }
+
+    .rp-columns-1-2-type-1 div.rp-sidebar {
+        display: none;
+    }
+
+    .rp-admin.controls-visible .rp-columns-1-2-type-1 .rp-main-layout-wrap {
+        float: left;
+        width: 69.9%;
+    }
+
+    .rp-admin.controls-visible .rp-columns-1-2-type-1 div.rp-sidebar {
+        display: block;
+        width: 29.9%;
+    }
+
+
+    /* ---------- RP Columns VAP start page ---------- */
+
+    .signed-out .rp-columns-vap-start-page #column-2 {
+        display: none;
+    }
+
+    .signed-out .rp-columns-vap-start-page #column-3,
+    .signed-out .rp-columns-vap-start-page #column-4 {
+        width: 49.9%;
+    }
+
 }
