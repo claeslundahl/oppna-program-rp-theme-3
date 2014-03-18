@@ -26,6 +26,12 @@
 	###set($use_rp_navigation_portlet = false)
 #end
 
+#set($show_notifications = false)
+#if ($theme.getSetting("show-notifications") == "true")
+    #set($show_breadcrumbs = true)
+#end
+
+
 
 ##
 ## Services
@@ -96,8 +102,7 @@
 ## Notification portlet
 ##
 
-#set($show_notifications_portlet = $is_signed_in)
-#set($show_notifications_portlet = true)
+#set($show_notifications_portlet = $is_signed_in && $show_notifications )
 
 #set ($notifications_portlet_prod_id = "notifications_WAR_notificationsrpportlet")
 
