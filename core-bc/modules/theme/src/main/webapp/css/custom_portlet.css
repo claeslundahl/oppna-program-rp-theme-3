@@ -1,5 +1,4 @@
 .aui {
-
 	/*----------------------------------------------------------------------
 	=Custom Portlets
 	----------------------------------------------------------------------*/
@@ -95,14 +94,31 @@
 	    height: 23px;
 	}
 
-	.dental-grant-wrap fieldset {
-	    margin: 8px 0px;
-	}
+    .dental-grant-wrap table.sub-category-options td, .dental-grant-wrap table.sub-category-options th {
+        padding: 4px 8px 2px 8px;
+        height: 23px;
+    }
+
+    .dental-grant-wrap table.sub-category-options {
+        margin-bottom: 20px;
+    }
+
+    .dental-grant-wrap table.sub-category-options td {
+        border: 1px solid gray;
+    }
+
+    .dental-grant-wrap fieldset {
+            margin: 8px 0px;
+        }
 
 	.dental-grant-wrap .hover-option {
 	    background-color: #add8e6;
 	    cursor: pointer;
 	}
+
+    .dental-grant-wrap .portlet-msg-error input {
+        margin-left: 10px;
+    }
 
 	.dental-grant-wrap #optionList {
 	    overflow-y: scroll;
@@ -113,6 +129,12 @@
 	.dental-grant-confirmation-wrap table td {
 	    padding: 3px;
 	}
+
+    .dental-grant-wrap#optionList {
+        overflow-y: scroll;
+        max-height: 500px;
+        overflow-x: hidden;
+    }
 
 	/* ---------------- ifeed portlet ------------------------- */
 
@@ -187,12 +209,12 @@ text-decoration: none;
 		word-wrap: break-word;
 	}
 
-	/* hide button */ 
+	/* hide button */
 	.ifeed-portlet .ifeed-portlet-ldap-people .aui-toolbar {
-	    display: none;    
+	    display: none;
 	}
 
-	.ifeed-portlet .ifeed-portlet-filter-input input { 
+	.ifeed-portlet .ifeed-portlet-filter-input input {
 	    width: 96%;
 	    margin: 0px auto;
 	}
@@ -500,7 +522,7 @@ text-decoration: none;
 
 	.booking-wrap li .radio-group {
 		display: block;
-		margin-bottom: 10px; 
+		margin-bottom: 10px;
 	}
 
 	.booking-wrap fieldset .textarea,
@@ -510,7 +532,7 @@ text-decoration: none;
 	.booking-wrap fieldset .radio,
 	.booking-wrap fieldset .select {
 		border: 1px solid #ccc;
-		padding: 4px 2px;  
+		padding: 4px 2px;
 	}
 
 	.booking-wrap fieldset .textarea {
@@ -527,7 +549,7 @@ text-decoration: none;
 
 	.booking-wrap .time {
 		margin: 0 0 3px;
-		width: 40px; 
+		width: 40px;
 	}
 
 	/* Datepicker formatting */
@@ -647,7 +669,7 @@ text-decoration: none;
 	}
 
 	.bfr-wrap .aui-tabview-content-wrap .aui-tabview-content-item table td {
-	    vertical-align: top; 
+	    vertical-align: top;
 	}
 
 	/* ---------------- User Wizard portlet ------------------------- */
@@ -660,7 +682,7 @@ text-decoration: none;
 
 	.controls-visible .user-wizard-portlet .portlet-borderless-container {
 		min-height: 2.5em;
-	} 
+	}
 
 	/*-------User Wizard Dialog -------*/
 
@@ -707,7 +729,7 @@ text-decoration: none;
 
 	.user-wizard-content-wrap {
 		color: #333;
-	    position: relative; 
+	    position: relative;
 	    z-index: 100000;
 	}
 
@@ -715,7 +737,7 @@ text-decoration: none;
 		background: #ddd;
 		-moz-border-radius: 4px;
 		-webkit-border-radius: 4px;
-		border-radius: 4px;	
+		border-radius: 4px;
 		/*behavior: url(/vgr-alfa-theme/htc/css3pie.htc);*/
 	    display: block;
 		font-family: Ubuntu, Arial, Verdana, Helvetica, sans-serif;
@@ -795,7 +817,7 @@ text-decoration: none;
 
 	.rss-wrap .news-toggle-wrap a {
 		color: #2f72a9;
-		text-decoration: none;	
+		text-decoration: none;
 	}
 
 	/*
@@ -828,7 +850,7 @@ text-decoration: none;
 
 	.list-news .news-item-no-date .news-block {
 		margin-left: 0;
-	} 
+	}
 
 	.list-news .news-title {
 		display: block;
@@ -883,12 +905,12 @@ text-decoration: none;
 
 	.cal-day-wrap {
 		border: 1px solid #c4ced5;
-		
+
 		-moz-border-radius: 3px;
 		-webkit-border-radius: 3px;
 		border-radius: 3px;
-			
-		/*behavior: url(/vgr-alfa-theme/htc/css3pie.htc);*/	
+
+		/*behavior: url(/vgr-alfa-theme/htc/css3pie.htc);*/
 		margin: 10px 0;
 		padding: 0;
 	}
@@ -991,7 +1013,7 @@ text-decoration: none;
 
 	ul.notfications-bar-list li a .count {
 		background: #fff;
-		
+
 		-moz-border-radius: 9px;
 		-webkit-border-radius: 9px;
 		border-radius: 9px;
@@ -1006,7 +1028,7 @@ text-decoration: none;
 
 	ul.notfications-bar-list li a .count span {
 		background: #444;
-		
+
 		-moz-border-radius: 7px;
 		-webkit-border-radius: 7px;
 		border-radius: 7px;
@@ -1021,7 +1043,7 @@ text-decoration: none;
 	}
 
 	ul.notfications-bar-list li a .count-highlight span {
-		background: #b00;	
+		background: #b00;
 	}
 
 	ul.notfications-bar-list li a .title {
@@ -1071,11 +1093,11 @@ text-decoration: none;
 		background: #fff;
 		-moz-border-radius: 3px 0 0 3px;
 		-webkit-border-radius: 3px 0 0 3px;
-		border-radius: 3px 0 0 3px;	
+		border-radius: 3px 0 0 3px;
 		border: 1px solid #e4edf9;
 		-moz-box-shadow: 1px 1px 4px #777;
 		-webkit-box-shadow: 1px 1px 4px #777;
-		box-shadow: 1px 1px 4px #777;	
+		box-shadow: 1px 1px 4px #777;
 		min-height: 40px;
 		position: relative;
 	}
@@ -1128,7 +1150,7 @@ text-decoration: none;
 
 	ul.notifications-list .notification-summary {
 		display: block;
-		margin: 0 0 0 40px; 
+		margin: 0 0 0 40px;
 	}
 
 	ul.notifications-list .notification-type {
@@ -1188,11 +1210,11 @@ text-decoration: none;
 	a.vap-link-button,
 	a.vap-link-button:visited {
 		background: #e8f1fd;
-		/*behavior: url(/vgr-alfa-theme/htc/css3pie.htc);*/	
+		/*behavior: url(/vgr-alfa-theme/htc/css3pie.htc);*/
 		border-color: #d4dce7 #bec6d0 #bec6d0 #d4dce7;
 		-moz-border-radius: 4px;
 		-webkit-border-radius: 4px;
-		border-radius: 4px;	
+		border-radius: 4px;
 		color: #255d8c;
 		font-family: Ubuntu, Arial, Verdana, Helvetica, sans-serif;
 		font-size: 1.2em;
@@ -1208,7 +1230,7 @@ text-decoration: none;
 	a.vap-link-button:visited {
 		background: #2C6FA7;
 		border-color: #255D8C;
-		color: #fff;	
+		color: #fff;
 	}
 
 	/* ----------------- VAP Search Portlet ----------------------- */
@@ -1312,7 +1334,7 @@ text-decoration: none;
 		-ms-box-sizing: border-box;
 		-webkit-box-sizing: border-box;
 		-khtml-box-sizing: border-box;
-		box-sizing: border-box;	
+		box-sizing: border-box;
 		display: block;
 		font-size: 16px;
         height: 41px;
@@ -1334,7 +1356,7 @@ text-decoration: none;
 	.vap-search-wrap input[type="submit"] {
 		background: #2865ad url(../images/buttons/button-bg-normal.png) 0 0 repeat-x;
 		border: 1px solid #2f71a8;
-		border-color: #2f71a8 #052a73 #052a73 #2f71a8;  
+		border-color: #2f71a8 #052a73 #052a73 #2f71a8;
 		-moz-border-radius: 3px;
 		-webkit-border-radius: 3px;
 		border-radius: 3px;
@@ -1355,7 +1377,7 @@ text-decoration: none;
 		/*behavior: url(/vgr-alfa-theme/htc/css3pie.htc);*/
 		-moz-border-radius: 0 0 3px 3px;
 		-webkit-border-radius: 0 0 3px 3px;
-		border-radius: 0 0 3px 3px;	
+		border-radius: 0 0 3px 3px;
 		border: 1px solid #e4edf9;
 		-moz-box-shadow: 1px 1px 4px #777;
 		-webkit-box-shadow: 1px 1px 4px #777;
@@ -1394,13 +1416,13 @@ text-decoration: none;
 		border-radius: 4px;
 		-moz-box-shadow: 0px 1px 4px 0px #cccccc;
 		-webkit-box-shadow: 0px 1px 4px 0px #cccccc;
-		box-shadow: 0px 1px 4px 0px #cccccc;	
+		box-shadow: 0px 1px 4px 0px #cccccc;
 		/*behavior: url(/vgr-alfa-theme/htc/css3pie.htc);*/
 		color: #333;
 		font-size: 1.5em;
 		margin: 10px 0 30px 0;
 		padding: 12px;
-		position: relative;	
+		position: relative;
 	}
 
 	.vap-search-results-summary::before {
@@ -1469,7 +1491,7 @@ text-decoration: none;
 		right: 10px;
 		text-decoration: none;
 		text-indent: -9999em;
-		width: 16px;	
+		width: 16px;
 	}
 
 
@@ -1483,11 +1505,11 @@ text-decoration: none;
 		border-radius: 4px;
 		-moz-box-shadow: 0px 1px 4px 0px #cccccc;
 		-webkit-box-shadow: 0px 1px 4px 0px #cccccc;
-		box-shadow: 0px 1px 4px 0px #cccccc;	
+		box-shadow: 0px 1px 4px 0px #cccccc;
 		/*behavior: url(/vgr-alfa-theme/htc/css3pie.htc);*/
 		margin: 10px 0;
 		padding: 12px;
-		position: relative;	
+		position: relative;
 	}
 
 	.vap-facet-search-wrap-empty {
@@ -1657,7 +1679,7 @@ text-decoration: none;
 
 	.vap-latest-documents > .bd {
 		min-height: 400px;
-	} 
+	}
 
 	/* ----------------- VAP View Document Portlet ----------------------- */
 
@@ -1772,27 +1794,27 @@ text-decoration: none;
 	}
 
 	ul.rp-bookmark-list li.rp-bookmark-item-odd {
-		background: #fff;	
+		background: #fff;
 	}
 
 	.rp-bookmark-title-wrap .rp-bookmark-title-wrap {}
 
 	.rp-bookmark-title-toggle {
-		background: #ccc;	
+		background: #ccc;
 		display: block;
 		float: left;
 		font-size: 0;
 		height: 18px;
 		text-indent: -9999em;
-		width: 18px;	
+		width: 18px;
 	}
 
 	.rp-bookmark-item-minimized .rp-bookmark-title-toggle {
-		background: transparent url(../images/arrows/rp-arrow-right.png) left center no-repeat;	
+		background: transparent url(../images/arrows/rp-arrow-right.png) left center no-repeat;
 	}
 
 	.rp-bookmark-item-maximized .rp-bookmark-title-toggle  {
-		background: transparent url(../images/arrows/rp-arrow-down.png) left center no-repeat;	
+		background: transparent url(../images/arrows/rp-arrow-down.png) left center no-repeat;
 	}
 
 	.rp-bookmark-title-wrap a.rp-bookmark-title {
