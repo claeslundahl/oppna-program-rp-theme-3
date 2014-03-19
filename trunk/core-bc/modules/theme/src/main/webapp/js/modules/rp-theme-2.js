@@ -37,7 +37,7 @@ AUI().add('rp-theme-2',function(A) {
                         instance._initDockbarToggle();
                         instance._initPlaceholders();
                         instance._initRpNewsCarousel();
-                        //instance._initRpKnowledgebase();
+                        instance._initRpAssetPublisher();
                         instance._initQuickAccessNav();
                         //instance._initTyckTill();
                         instance._initSystemPageHelp();
@@ -105,11 +105,11 @@ AUI().add('rp-theme-2',function(A) {
             			overlayLinks.plug(A.Plugin.RpIframeLink);
             		},
             		
-            		_initRpKnowledgebase: function() {
+            		_initRpAssetPublisher: function() {
             			var instance = this;
             			
-            			var rpKnowledgebase = new A.RpKnowledgebase();
-            			rpKnowledgebase.render();
+            			var rpAssetPublisher = new A.RpAssetPublisher();
+                        rpAssetPublisher.render();
             		},
             		
             		_initRpNewsCarousel: function() {
@@ -271,6 +271,7 @@ AUI().add('rp-theme-2',function(A) {
             'aui-base',
             'event',
             'rp-action-confirmation-plugin',
+            'rp-asset-publisher',
             'rp-navigation-button',
             'rp-news-carousel',
             'rp-placeholder-plugin',

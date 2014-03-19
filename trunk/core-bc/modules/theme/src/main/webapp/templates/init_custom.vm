@@ -163,6 +163,7 @@
 #set($theme_js_scripts = [
     "fixes/ios-orientationchange-fix.js",
     "modules/rp-action-confirmation-plugin.js",
+    "modules/rp-asset-publisher.js",
 	"modules/rp-footer-plugin.js",
     "modules/rp-quick-access-nav.js",
     "modules/rp-system-help.js",
