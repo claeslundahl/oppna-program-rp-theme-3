@@ -11,7 +11,8 @@
 			<setting key="portlet-setup-show-borders-default" value="false" configurable="true" type="checkbox" />
 			<setting key="use-rp-nav-portlet" value="true" configurable="true" type="checkbox" />
 			<setting key="show-breadcrumbs" value="true" configurable="true" type="checkbox" />
-            <setting key="show-notifications" value="true" configurable="true" type="checkbox" />
+            <setting key="foo-bar" value="true" configurable="true" type="checkbox" />
+            <setting key="show-notificatons-bar" value="true" configurable="true" type="checkbox" />
 		</settings>
 
 	</theme>
