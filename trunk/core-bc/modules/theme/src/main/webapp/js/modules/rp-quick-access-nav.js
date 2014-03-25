@@ -218,7 +218,7 @@ AUI().add('rp-quick-access-nav',function(A) {
                     
                     _initOverlay: function(trigger) {
                     	var instance = this;
-                    	
+
                     	var triggerList = trigger.ancestor('ul');
                     	var headingNode = A.one('#heading');
 
@@ -326,17 +326,30 @@ AUI().add('rp-quick-access-nav',function(A) {
                     	var instance = this;
 
                     	var overlay = e.currentTarget;
-                    	
                     	var triggers = overlay.get('trigger');
 
                     	triggers.each(function(item, index, list) {
                     		item.addClass(CSS_ACTIVE);
                     	});
-                    	
+
+                        // Update x-position for overlay
+                        /*
+                        var headingNode = A.one('#heading');
+                        var xPos = headingNode.getX();
+                        if(xPos) {
+                            instance.overlayPanel.setStyle('left: ' + xPos + 'px');
+                        }
+                        */
+                        //instance.constructor.superclass.refreshAlign();
+
+                        //var boundingBox = instance.overlayPanel.get('boundingBox');
+                        //console.log('boundingBox', boundingBox);
+
+
                     	instance.overlayMask.show();
                     	
                     },
-                    
+
                     _someFunction: function() {
                         var instance = this;
                     }

@@ -13,7 +13,7 @@
 #set($show_breadcrumbs = false)
 #set($use_rp_navigation_portlet = false)
 
-#if ($theme.getSetting("show-breadcrumbs") == "true")
+#if ($theme.getSetting("show-breadcrumbs") == "true" || $theme.getSetting("show-breadcrumbs") == true)
 	#set($show_breadcrumbs = true)
 #end
 
@@ -21,13 +21,13 @@
 	#set($css_class = $css_class + " has-breadcrumbs")
 #end
 
-#if ($theme.getSetting("use-rp-nav-portlet") == "true")
+#if ($theme.getSetting("use-rp-nav-portlet") == "true" || $theme.getSetting("use-rp-nav-portlet") == true)
 	#set($use_rp_navigation_portlet = true)
 	###set($use_rp_navigation_portlet = false)
 #end
 
 #set($show_notifications_bar = false)
-#if ($theme.getSetting("show-notifications-bar") == "true")
+#if ($theme.getSetting("show-notifications-bar") == "true" || $theme.getSetting("show-notifications-bar") == true)
     #set($show_notifications_bar = true)
 #end
 
