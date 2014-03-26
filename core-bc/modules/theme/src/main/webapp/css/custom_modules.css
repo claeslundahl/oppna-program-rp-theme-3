@@ -90,6 +90,7 @@
 
 	li.vgr-list-view-item .hd h3 {
 		float: left;
+		line-height: 1.0;
 		margin: 0;
 		padding: 0;
 	}

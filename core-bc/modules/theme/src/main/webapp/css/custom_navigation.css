@@ -28,6 +28,16 @@
         background: none;
     }
 
+    /* Hide Liferay notifications */
+    .dockbar-split .dockbar .navbar-inner .nav > li.dockbar-user-notifications {
+        display: none;
+    }
+
+    /* Hide user avatar image */
+    .dockbar-split .dockbar .navbar-inner .nav > li.user-avatar span.nav-item-label > img {
+        display: none;
+    }
+
     .dockbar-split .dockbar .navbar-inner .nav > li > a,
     .dockbar-split .dockbar .navbar-inner .nav > li > a:hover {
         color: #777;
@@ -188,7 +198,7 @@
     color: #fff;
     display: block;
     font-family: Arial, Verdana, Helvetica, sans-serif;
-    font-size: 1.0em;
+    font-size: 1.2em;
     font-weight: normal;
     line-height: 1.0;
     margin: 0;
