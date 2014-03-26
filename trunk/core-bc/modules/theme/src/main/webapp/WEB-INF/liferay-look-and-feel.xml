@@ -12,6 +12,7 @@
 			<setting key="use-rp-nav-portlet" value="true" configurable="true" type="checkbox" />
 			<setting key="show-breadcrumbs" value="true" configurable="true" type="checkbox" />
             <setting key="show-notifications-bar" value="true" configurable="true" type="checkbox" />
+            <setting key="show-my-sites" value="false" configurable="true" type="checkbox" />
 		</settings>
 
 	</theme>
