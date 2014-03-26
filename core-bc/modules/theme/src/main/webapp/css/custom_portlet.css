@@ -1695,6 +1695,10 @@ text-decoration: none;
 		overflow-x: scroll;
 	}
 
+    .crud-app-wrapper .control-group {
+        margin: 0;
+    }
+
 	.crud-app-tables-filter {}
 
 	.crud-app-tables-filter label {
