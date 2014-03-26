@@ -29,13 +29,17 @@
     }
 
     /* Hide Liferay notifications */
-    .dockbar-split .dockbar .navbar-inner .nav > li.dockbar-user-notifications {
+    /* Hide my sites */
+    /* Hide user avatar image */
+    .dockbar-split .dockbar .navbar-inner .nav > li.dockbar-user-notifications,
+    .dockbar-split .dockbar .navbar-inner .nav > li.my-sites,
+    .dockbar-split .dockbar .navbar-inner .nav > li.user-avatar span.nav-item-label > img {
         display: none;
     }
 
-    /* Hide user avatar image */
-    .dockbar-split .dockbar .navbar-inner .nav > li.user-avatar span.nav-item-label > img {
-        display: none;
+    /* Show my sites when it should be shown - controlled through theme settings */
+    .show-my-sites .dockbar .navbar-inner .nav > li.my-sites {
+        display: block;
     }
 
     .dockbar-split .dockbar .navbar-inner .nav > li > a,
@@ -44,9 +48,40 @@
         line-height: 21px;
     }
 
+    .dockbar-split .dockbar .navbar-inner .nav > li > a:hover {
+        background: #3a84c1;
+        color: #fff;
+    }
+
+    .navbar .icon-caret-down {
+        background: transparent;
+    }
+
+    .navbar a:hover .icon-caret-down {
+        background: transparent;
+    }
+
+    .navbar a:hover .icon-caret-down:before {
+        color: #fff;
+    }
+
+    .dockbar-split .dockbar .navbar-inner .nav li.dropdown.open > .dropdown-toggle {
+        background: #3a84c1;
+    }
+
+    .dockbar .nav li.dropdown .dropdown-menu,
+    .dockbar .nav li.dropdown .site-administration-menu {
+        background: #3a84c1;
+    }
+
     .dockbar-split .dockbar .navbar-inner .nav > li.dockbar-user-notifications > a,
     .dockbar-split .dockbar .navbar-inner .nav > li.dockbar-user-notifications > a:hover {
         color: #fff;
+    }
+
+    .dockbar .nav li.dropdown .dropdown-menu > li > a,
+    .dockbar .nav li.dropdown .site-administration-menu > li > a {
+        font-size: 1.0em;
     }
 
     /*------- Top navigation -------*/
@@ -74,82 +109,61 @@
   }
 
     ul.top-nav-list {
-      background: #fff url(../images/navigation/top-navigation-bg.png) bottom left repeat-x;
-      -moz-border-radius: 3px;
-      -webkit-border-radius: 3px;
-      border-radius: 3px;
-
-      -moz-box-shadow: 0px 1px 4px 0px #cccccc;
-      -webkit-box-shadow: 0px 1px 4px 0px #cccccc;
-      box-shadow: 0px 1px 4px 0px #cccccc;
-      
-      /*behavior: url(/vgr-alfa-theme/htc/css3pie.htc);*/
-    
-      border: 1px solid #d5e0ea;
-    
-      float: right;
+      background: none;
+      -moz-border-radius: 0px;
+      -webkit-border-radius: 0px;
+      border-radius: 0px;
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      border: none;
+      float: left;
       list-style: none;
       margin: 0;
       padding: 5px;
       position: relative;
-    
       padding: 0 5px;
-
-      background: none;
-
-      -moz-border-radius: 0px;
-      -webkit-border-radius: 0px;
-      border-radius: 0px;
-
-      -moz-box-shadow: none;
-      -webkit-box-shadow: none;
-      box-shadow: none;
-
-      border: none;
-
-      float: left;
-
   }
 
   ul.top-nav-list li {
-    background: transparent url(../images/navigation/topnav-sep.png) 100% 50% no-repeat;
-    display: block;
-    float: left;
-    padding: 0 9px 0 8px;
-    margin: 0;
-    
     background: none;
     border-right: 1px solid #e0e0e0;
+    display: block;
+    float: left;
+    line-height: 1.0;
     padding: 0;
+    margin: 0;
   }
 
   ul.top-nav-list li.last {
     background: none;
-    
     border-right: none;
   }
 
   .top-nav-list a,
   .top-nav-list li > span {
+    color: #555;
     display: block;
     float: left;
     font-size: 1.1em;
-    padding: 5px 5px;
-    text-decoration: none;
-    
+    line-height: 21px;
     padding: 10px 10px;
+    text-decoration: none;
   }
 
   .top-nav-list li > span {
+    display: block;
+    margin: 5px 0 0 0;
     color: #777;
   }
 
   ul.top-nav-list li a:hover {
-    background-color: #e4edf9;
+    background-color: #3a84c1;
+    color: #fff;
   }
 
   ul.top-nav-list li a.active {
-    background-color: #4d79b4;
+    background-color: #3a84c1;
     color: #fff;
   }
 
@@ -188,6 +202,7 @@
     background: url(../images/navigation/navigation-separator.png) top right repeat-y;
     display: block;
     float: left;
+    line-height: 1.0;
     padding: 0 2px 0 0;
     position: relative;
     zoom: 1;
@@ -353,6 +368,10 @@
     top: 3px;
     width: 35px;
   }
+
+    .quick-access-nav-hd .filter-wrap label {
+        color: #fff;
+    }
 
   .quick-access-nav-hd .filter-wrap label,
   .quick-access-nav-hd .filter-wrap input,

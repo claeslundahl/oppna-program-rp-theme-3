@@ -31,6 +31,11 @@
     #set($show_notifications_bar = true)
 #end
 
+#set($show_my_sites = false)
+#if ($theme.getSetting("show-my-sites") == "true" || $theme.getSetting("show-my-sites") == true)
+    #set($show_my_sites = true)
+    #set ($css_class = "${css_class} show-my-sites")
+#end
 
 
 ##

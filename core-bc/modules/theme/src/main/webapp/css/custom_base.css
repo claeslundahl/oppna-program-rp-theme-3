@@ -260,6 +260,14 @@
     text-decoration: underline;
   }
 
+    .dockbar a,
+    .dockbar a:visited,
+    .nav-pills a,
+    .nav-pills a:visited
+    {
+        text-decoration: none;
+    }
+
   a:hover {
     color: #2f72a9;
     text-decoration: none;

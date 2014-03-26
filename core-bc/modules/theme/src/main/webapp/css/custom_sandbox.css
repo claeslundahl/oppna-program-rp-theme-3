@@ -38,8 +38,19 @@ a:visited.link-button {
 	background-repeat: no-repeat;
 	border: 1px solid;
 	border-color: #bfbfbf #dedede #dedede #bfbfbf;
-	font: 1em Arial, Helvetica, Verdana, sans-serif;
     margin: 5px;
+}
+
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+select,
+textarea,
+.textarea,
+button,
+a.link-button,
+a:visited.link-button {
+	font: 1em Arial, Helvetica, Verdana, sans-serif;
 	padding: 5px 1px;
 }
 
