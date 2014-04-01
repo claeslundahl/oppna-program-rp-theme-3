@@ -561,19 +561,19 @@ text-decoration: none;
       }
 
       .tree-node-edit {
-        background: transparent url(/rp-boostrap-theme/images/common/edit.png) 0 0 no-repeat;
+        background: transparent url(../images/common/edit.png) 0 0 no-repeat;
       }
 
       .tree-node-delete {
-        background: transparent url(/regionportalen2-theme/images/common/delete.png) 0 0 no-repeat;
+        background: transparent url(../images/common/delete.png) 0 0 no-repeat;
       }
 
       .tree-node-use {
-        background: transparent url(/regionportalen2-theme/images/common/add.png) 0 0 no-repeat;
+        background: transparent url(../images/common/add.png) 0 0 no-repeat;
       }
 
       .tree-node-tooltip {
-        background: transparent url(/regionportalen2-theme/images/common/help.png) 0 0 no-repeat;
+        background: transparent url(../images/common/help.png) 0 0 no-repeat;
         clear: both; /* Claes */
       }
 
@@ -584,7 +584,7 @@ text-decoration: none;
 
       /*-- Edit triggers ------*/
       .ifeed-edit-trigger {
-        background: transparent url(/rp-boostrap-theme/images/common/edit.png) right center no-repeat;
+        background: transparent url(../images/common/edit.png) right center no-repeat;
         cursor: pointer;
         display: block;
         font-size: 0;
@@ -593,19 +593,7 @@ text-decoration: none;
         width: 16px;
       }
 
-      .ifeed-edit-trigger-heading {
-
-      }
-
-      .ifeed-edit-trigger-description {
-
-      }
-
       /*-- Header block ------*/
-      .ifeed-header {
-
-      }
-
       .ifeed-header h1 {
         margin: 0;
       }
@@ -628,7 +616,7 @@ text-decoration: none;
       }
 
       a.link-button {
-        background: #d4d4d4 url(/regionportalen2-theme/images/portlet/header_bg.png) 0 0 repeat-x;
+        background: #d4d4d4 url(../images/portlet/header_bg.png) 0 0 repeat-x;
         border: 1px solid #dedede;
         border-color: #c8c9ca #9e9e9e #9e9e9e #c8c9ca;
         -moz-border-radius: 4px;
@@ -649,7 +637,7 @@ text-decoration: none;
       }
 
       a.link-button:hover {
-        background: #b9ced9 url(/regionportalen2-theme/images/application/state_hover_bg.png) 0 0 repeat-x;
+        background: #b9ced9 url(../images/application/state_hover_bg.png) 0 0 repeat-x;
         border-color: #627782;
         color: #336699;
       }
@@ -667,11 +655,11 @@ text-decoration: none;
       }
 
       a.link-button-cancel .link-button-content {
-        background: transparent url(/rp-boostrap-theme/images/common/close.png) 0 0 no-repeat;
+        background: transparent url(../images/common/close.png) 0 0 no-repeat;
       }
 
       a.link-button-help .link-button-content {
-        background: transparent url(/rp-boostrap-theme/images/common/help.png) 0 0 no-repeat;
+        background: transparent url(../images/common/help.png) 0 0 no-repeat;
       }
 
       /*-- Meta info block ------*/
@@ -735,13 +723,13 @@ text-decoration: none;
 
       /*-- Steps (arrow flow) ------*/
       .ifeed-step {
-        background: transparent url(<%=request.getContextPath()%>/img/ifeed-arrow-sprite.png ) 0 0 no-repeat;
+        background: transparent url(../images/ifeed/ifeed-arrow-sprite.png ) 0 0 no-repeat;
         margin: 10px 0;
         padding: 0 0 0 45px;
       }
 
       .ifeed-step span {
-        background: transparent url(<%=request.getContextPath()%>/img/ifeed-arrow-sprite.png ) right -70px no-repeat;
+        background: transparent url(../images/ifeed/ifeed-arrow-sprite.png ) right -70px no-repeat;
         color: #444;
         display: block;
         font-size: 1.6em;
@@ -774,6 +762,10 @@ text-decoration: none;
           clear: both;
       }
 
+      .search-results {
+        font-size: 100%;
+      }
+
       /* Document metadata block */
       .ifeed-metadata {
         font-size: 14px;
@@ -794,7 +786,7 @@ text-decoration: none;
         margin-bottom: 0.5em;
         color: #333;
         margin-left: 0px;
-        #display: inline-block;
+        /*display: inline-block;*/
       }
 
       .metadata-tooltip dt {
@@ -813,6 +805,23 @@ text-decoration: none;
       /* Search result block */
       .ifeed-search-result-list .col-3 {
           width: 6em;
+      }
+
+      .accordion-group.lfr-panel-extended .accordion-heading .accordion-toggle {
+        color: #333;
+        font-weight: bold;
+      }
+
+      button {
+        background: #d4d4d4 url(../images/ifeed/header_bg.png) repeat-x 0 0;
+        border: 1px solid;
+        border-color: #c8c9ca #9e9e9e #9e9e9e #c8c9Ca;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        color: #34404F;
+        font-weight: bold;
+        text-shadow: 1px 1px #fff;
       }
 
     }
