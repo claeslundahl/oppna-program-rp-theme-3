@@ -325,6 +325,10 @@
       font-weight: bold;
   }
 
+  .table {
+    font-size: 100%;
+  }
+
 
   /* ---------- Hidden accessible ---------- */
 
