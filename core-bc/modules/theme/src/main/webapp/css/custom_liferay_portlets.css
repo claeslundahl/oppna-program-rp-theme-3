@@ -224,6 +224,7 @@
 	ul.section-navigation-list li a .description {
 		color: #333;
 		display: block;
+		font-family: Arial, Verdana, Helvetica, sans-serif;
 	}
 
 	/*------- Portlet Alerts -------*/

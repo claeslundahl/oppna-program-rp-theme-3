@@ -39,7 +39,7 @@ AUI().add('rp-theme-2',function(A) {
                         instance._initRpNewsCarousel();
                         instance._initRpAssetPublisher();
                         instance._initQuickAccessNav();
-                        //instance._initTyckTill();
+                        instance._initTyckTill();
                         instance._initSystemPageHelp();
                     },
     
@@ -275,6 +275,7 @@ AUI().add('rp-theme-2',function(A) {
             'rp-navigation-button',
             'rp-news-carousel',
             'rp-placeholder-plugin',
+            'rp-tyck-till',
             'rp-system-help',
             'rp-quick-access-nav'
 

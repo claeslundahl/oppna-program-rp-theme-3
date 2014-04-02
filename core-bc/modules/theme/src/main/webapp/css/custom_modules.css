@@ -588,7 +588,7 @@
 
 	/*-------RP Dialog -------*/
 
-	.rp-dialog .aui-dialog-hd {
+	.rp-dialog .modal-header {
 		background: #2C6FA7;
 		color: #fff;
 		font-family: Ubuntu, Arial, Verdana, Helvetica, sans-serif;

@@ -23,7 +23,6 @@
 
 #if ($theme.getSetting("use-rp-nav-portlet") == "true" || $theme.getSetting("use-rp-nav-portlet") == true)
 	#set($use_rp_navigation_portlet = true)
-	###set($use_rp_navigation_portlet = false)
 #end
 
 #set($show_notifications_bar = false)
@@ -36,6 +35,12 @@
     #set($show_my_sites = true)
     #set ($css_class = "${css_class} show-my-sites")
 #end
+
+#set($show_tyck_till = true)
+#if ($theme.getSetting("show-tyck-till") == "false" || $theme.getSetting("show-tyck-till") == false)
+    #set($show_tyck_till = false)
+#end
+
 
 
 ##
@@ -170,6 +175,7 @@
     "modules/rp-action-confirmation-plugin.js",
     "modules/rp-asset-publisher.js",
 	"modules/rp-footer-plugin.js",
+    "modules/rp-tyck-till.js",
     "modules/rp-quick-access-nav.js",
     "modules/rp-system-help.js",
     "modules/rp-navigation-button.js",
