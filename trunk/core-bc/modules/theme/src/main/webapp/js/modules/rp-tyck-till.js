@@ -64,7 +64,7 @@ AUI().add('rp-tyck-till',function(A) {
                     
                     _launchDialog: function(dialogURL) {
                     	var instance = this;
-                    	
+
 						var bodyContent = A.substitute(TPL_IFRAME, {
 							iframeSrc: dialogURL
 						});
@@ -74,9 +74,11 @@ AUI().add('rp-tyck-till',function(A) {
                              {
                                bodyContent: bodyContent,
                                centered: true,
+                               cssClass: CSS_DIALOG,
                                headerContent: instance.messages.dialog.title,
+                               height: instance.get(DIALOG_HEIGHT),
                                modal: true,
-                               render: '#modal',
+                               zIndex: 1000,
                                width: instance.get(DIALOG_WIDTH)
                              }
                            ).render();
@@ -118,13 +120,13 @@ AUI().add('rp-tyck-till',function(A) {
                     
                     _onTriggerClick: function(e) {
                     	var instance = this;
-                    	
+
                     	e.halt();
                     	
                     	var linkNode = e.currentTarget;
                     	
                     	var dialogURL = linkNode.getAttribute(DATA_ATTRIBUTE_DIALOG_URL);
-                    	
+
                     	instance._launchDialog(dialogURL);
                     },
                     
@@ -143,7 +145,7 @@ AUI().add('rp-tyck-till',function(A) {
             'aui-base',
             'aui-io',
             'aui-loading-mask',
-            'aui-dialog',
+            'aui-modal',
             'substitute'
       ]
     }

@@ -67,6 +67,11 @@ $theme.include($body_top_include)
             #if($show_notifications_portlet)
                 #parse ("$full_templates_path/notifications.vm")
             #end
+
+            #if($is_signed_in && $show_tyck_till)
+                #parse ("$full_templates_path/tyck_till_content.vm")
+            #end
+
         </div>
     #end
 
