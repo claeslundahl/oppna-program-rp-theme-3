@@ -215,6 +215,24 @@ text-decoration: none;
 		word-wrap: break-word;
 	}
 
+    .ifeed-portlet .ifeed-search-list .taglib-page-iterator {
+        padding: 0;
+    }
+
+    .ifeed-portlet .ifeed-search-list .lfr-pagination-config {
+        line-height: 1;
+    }
+
+	.ifeed-portlet .ifeed-search-list .search-results {
+	    float: none;
+	    margin: 0 0 5px 0;
+	    line-height: 1;
+	}
+
+	.ifeed-portlet .ifeed-search-list .taglib-page-iterator .lfr-pagination-buttons {
+	    float: none;
+	}
+
 	/* hide button */
 	.ifeed-portlet .ifeed-portlet-ldap-people .aui-toolbar {
 	    display: none;
@@ -822,6 +840,12 @@ text-decoration: none;
         color: #34404F;
         font-weight: bold;
         text-shadow: 1px 1px #fff;
+      }
+
+      button:hover {
+        background: #b9ced9 url(../images/application/state_hover_bg.png) 0 0 repeat-x;
+        border-color: #627782;
+        color: #336699;
       }
 
     }
