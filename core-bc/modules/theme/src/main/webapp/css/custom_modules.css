@@ -594,8 +594,40 @@
 		font-family: Ubuntu, Arial, Verdana, Helvetica, sans-serif;
 		font-size: 26px;
 		font-weight: normal;
+		line-height: 24px;
 		text-shadow: none;
 	}
+
+    .rp-dialog .close,
+    .rp-dialog .btn.close {
+        background: transparent url(../images/dialog/rp-dialog-close-sprite.png) 0 0 no-repeat;
+        border: none;
+		-moz-border-radius: 0;
+		-webkit-border-radius: 0;
+		border-radius: 0;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        display: block;
+        filter: none;
+        font-size: 0;
+        height: 24px;
+        margin: 0;
+        opacity: 1;
+        text-align: -9999em;
+        text-shadow: none;
+        width: 24px;
+    }
+
+    .rp-dialog .close:hover,
+    .rp-dialog .btn.close:hover,
+    .rp-dialog .close:focus,
+    .rp-dialog .btn.close:focus,
+    .rp-dialog .close.active,
+    .rp-dialog .btn.close.active {
+        background-position: 0 -38px;
+    }
+
 
 	.rp-dialog .aui-buttonitem-content {
 		background: none;
