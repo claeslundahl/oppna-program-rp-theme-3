@@ -2,8 +2,8 @@ AUI().add('rp-system-help',function(A) {
     var Lang = A.Lang,
         isNull = Lang.isNull,
         
-        CUSTOM_KB_LINK_CLICK_EVENT = 'event-kb-aggregator-link-click',
-        
+        CUSTOM_AP_LINK_CLICK_EVENT = 'event-ap-link-click',
+
         SIDEBAR_HELP_TRIGGER_ID = 'sidebarHelpTrigger',
         
         SIDEBAR_TOOLS = 'sidebarTools',
@@ -93,15 +93,15 @@ AUI().add('rp-system-help',function(A) {
                         var trigger = instance.trigger;
                         
                         var systemsHelpAggregator = instance.get(SYSTEMS_HELP_AGGREGATOR);
+
+                        var helpListItems = systemsHelpAggregator.one('ul.sidebar-help-list > li');
                         
-                        var panel = systemsHelpAggregator.one('.' + CSS_LFR_PANEL);
-                        
-                        // Do nothing if there is no panel
-                        if(isNull(panel)) {
+                        // Do nothing if there are no items in help list
+                        if(!helpListItems) {
                         	return;
                         }
                         
-                        var bodyContent = panel;
+                        var bodyContent = systemsHelpAggregator;
 
                         var overlay = new A.OverlayContextPanel({
                             align:{
@@ -128,8 +128,8 @@ AUI().add('rp-system-help',function(A) {
                         
                         instance.overlay = overlay;
                     },
-                    
-                    _onClickCustomEventKbLink: function(e) {
+
+                    _onClickCustomEventApLink: function(e) {
                     	var instance = this;
                     	
                     	var currentTarget = e.currentTarget;
@@ -156,7 +156,7 @@ AUI().add('rp-system-help',function(A) {
                         
                         var overlay = e.currentTarget;
                         
-                        A.on(CUSTOM_KB_LINK_CLICK_EVENT, instance._onClickCustomEventKbLink, instance);
+                        A.on(CUSTOM_AP_LINK_CLICK_EVENT, instance._onClickCustomEventApLink, instance);
                     },
                     
                     _onOverlayShow: function (e) {

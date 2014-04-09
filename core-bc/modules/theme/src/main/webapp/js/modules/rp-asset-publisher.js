@@ -1,13 +1,16 @@
 AUI().add('rp-asset-publisher',function(A) {
     var Lang = A.Lang,
         
-    	CSS_RP_DIALOG = 'rp-dialog',
+        CSS_DIALOG = 'rp-dialog',
     
         NAME = 'rp-asset-publisher',
         NS = 'rp-asset-publisher',
         
         CUSTOM_LINK_CLICK_EVENT = 'event-ap-link-click'
     ;
+
+        var TPL_IFRAME = '<div class="iframe-wrap"><iframe src="{iframeSrc}" width="100%" height="100%"></iframe></div>'
+        ;
         
     var RpAssetPublisher = A.Component.create(
             {
@@ -21,6 +24,8 @@ AUI().add('rp-asset-publisher',function(A) {
                 NS: NS,
                 
                 prototype: {
+
+                    modal: null,
                     
                     initializer: function(config) {
                         var instance = this;
@@ -46,11 +51,9 @@ AUI().add('rp-asset-publisher',function(A) {
                     _bindSidebarAssetPublisher: function() {
                         var instance = this;
 
-                        var sidebarNode = A.one('.rp-sidebar');
+                        var sidebarHelpLinks = A.all('.sidebar-help-list li a');
 
-                        if(!sidebarNode) { return; }
-
-                        var sidebarHelpLinks = sidebarNode.all('.sidebar-help-list li a');
+                        if(!sidebarHelpLinks) { return; }
 
                         sidebarHelpLinks.on('click', instance._onSidebarHelpLinkClick, instance);
 
@@ -63,17 +66,24 @@ AUI().add('rp-asset-publisher',function(A) {
 
                         var currentTarget = event.currentTarget;
 
-                        var dialogUrl = currentTarget.getAttribute('data-dialog-url');
+                        var url = currentTarget.getAttribute('data-dialog-url');
 
-                        if(!dialogUrl || dialogUrl == '') {
+                        if(!url || url == '') {
                             return;
                         }
 
+                        var modalConfig = {
+                            uri: url,
+                            title: currentTarget.html(),
+                            iframeCssClass: 'foo-iframe',
+                            dialog: {
+                                cssClass: 'rp-dialog',
+                                height: 500,
+                                width: 500
+                            }
+                        };
 
-
-                        currentTarget.setAttribute('href', dialogUrl);
-
-                        Liferay.Util.openInDialog(event, event.currentTarget);
+                        Liferay.Util.openWindow(modalConfig);
 
                         A.fire(CUSTOM_LINK_CLICK_EVENT, {currentTarget: currentTarget});
                     },
@@ -93,7 +103,7 @@ AUI().add('rp-asset-publisher',function(A) {
     },1, {
         requires: [
 	       'aui-base',
-	       //'aui-dialog',
+	       'aui-modal',
 	       'event-custom',
             'liferay-util-window',
 	       'substitute'

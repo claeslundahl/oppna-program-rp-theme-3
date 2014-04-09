@@ -160,7 +160,7 @@ AUI().add('rp-theme-2',function(A) {
             			var instance = this;
             			
             			
-            			var systemsHelpAggregator = A.one('.rp-sidebar-hidden .knowledge-base-portlet-aggregator');
+                        var systemsHelpAggregator = A.one('.rp-sidebar-hidden .sidebar-help-wrap');
             			
             			// If there is no systems help aggregator - do nothing
             			if(!systemsHelpAggregator) { return; }
