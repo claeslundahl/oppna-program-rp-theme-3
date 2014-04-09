@@ -598,6 +598,14 @@
 		text-shadow: none;
 	}
 
+	.rp-dialog .modal-header h3 {
+		color: #fff;
+		font-family: Ubuntu, Arial, Verdana, Helvetica, sans-serif;
+		font-size: 26px;
+		font-weight: normal;
+		line-height: 24px;
+	}
+
     .rp-dialog .close,
     .rp-dialog .btn.close {
         background: transparent url(../images/dialog/rp-dialog-close-sprite.png) 0 0 no-repeat;
@@ -649,6 +657,32 @@
 
 	.rp-dialog .aui-panel-hd-text {
 		line-height: 1.4;
+	}
+
+	/*------- Sidebar Help -------*/
+
+	ul.sidebar-help-list {
+	    list-style: none;
+	    margin: 0;
+	    padding: 0;
+	    li {
+	        margin: 5px 0;
+	        padding: 0;
+
+	        a {
+	            background: transparent url(../images/common/page.png) left center no-repeat;
+	            line-height: 16px;
+	            display: block;
+	            font-weight: bold;
+	            min-height: 16px;
+	            padding-left: 20px;
+	            text-decoration: none;
+
+	            &:hover {
+	                text-decoration: underline;
+	            }
+	        }
+	    }
 	}
 
 	/*------- Pagers -------*/
@@ -911,3 +945,46 @@
 	}
 
 }
+
+/*------- Dialog iFrame -------*/
+
+.dialog-iframe-root-node {
+
+    body {
+        background: #fff;
+    }
+
+    .portlet-asset-publisher {
+        .taglib-header {
+
+            border: 0;
+            display: none;
+            margin: 0;
+
+            .header-back-to {
+                display: none;
+            }
+
+            /* Asset title is displayed in modal header */
+            .header-title {
+                display: none;
+            }
+
+        }
+
+        .asset-full-content {
+            .lfr-meta-actions {
+                display: none;
+            }
+
+            &.show-asset-title .asset-content,
+            .asset-content {
+                margin: 0;
+            }
+        }
+
+    }
+
+
+}
+
