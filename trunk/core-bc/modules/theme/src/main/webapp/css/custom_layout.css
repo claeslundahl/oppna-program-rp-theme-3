@@ -4,6 +4,17 @@
 
 .aui {
 
+    /* ---------- All Layouts ---------- */
+
+    .portlet-column-content.empty,
+    .controls-hidden .portlet-column-content.empty {
+        padding: 0;
+    }
+
+    .controls-visible .portlet-column-content.empty {
+        padding: 50px;
+    }
+
     /* ---------- System Page ---------- */
 
     .rp-columns-system-page {
