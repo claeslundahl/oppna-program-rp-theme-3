@@ -23,6 +23,12 @@
     width: auto
   }
 
+    .dockbar-split .dockbar .navbar-inner .container {
+        float: right;
+        position: relative;
+        width: auto;
+    }
+
     .dockbar-split .dockbar .navbar-inner .nav > li {
         background: #fff url(../images/navigation/top-navigation-bg.png) bottom left repeat-x;
         background: none;
@@ -384,9 +390,18 @@
       float: right;
   }
 
+    .top-wrap {
+
+        .top-navigation-wrap,
+        .dockbar-wrap {
+            float: right;
+        }
+
+    }
+
+
   .top-wrap .dockbar-wrap {
       height: 43px;
-      width: 450px;
   }
 
   ul.quick-access-nav-list {
@@ -508,7 +523,8 @@
         width: 49.0%;
     }
 
-    .aui-w30 ul.site-navigation-list > li {
+    .span3 ul.site-navigation-list > li,
+    .span4 ul.site-navigation-list > li {
         width: 100%;
     }
 

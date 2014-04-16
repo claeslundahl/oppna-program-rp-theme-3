@@ -1690,6 +1690,7 @@ text-decoration: none;
 		float: right;
         height: 42px;
         min-width: 50px;
+        padding: 0;
 		position: relative;
 		width: 10%;
 	}
