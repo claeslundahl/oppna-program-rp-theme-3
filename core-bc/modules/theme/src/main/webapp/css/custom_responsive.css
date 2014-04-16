@@ -1,0 +1,443 @@
+@import "compass";
+@import "mixins";
+
+/* ---------- Dockbar ---------- */
+
+@include respond-to(phone, tablet) {
+    .aui {
+        * {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+        /* ----------------- Banner / header ----------------------- */
+
+        #heading {
+
+            .site-title {
+                a.logo {
+                }
+            }
+
+            .top-wrap {
+                .top-navigation-wrap {
+                    display: none;
+                }
+
+                .dockbar-wrap {
+                    height: auto;
+                }
+
+            }
+
+        }
+
+        /* ----------------- Navigation ----------------------- */
+
+        .rp-navigation-portlet {
+            .portlet-borderless-container {
+                min-height: 0;
+            }
+        }
+
+
+        #navigation {
+            display: none;
+
+            &.open {
+                display: block;
+
+                .navbar-inner {
+                    @include border-radius(3px);
+
+                    padding: 10px;
+
+                    .nav-collapse {
+                        height: auto;
+                        overflow: visible;
+                    }
+                }
+            }
+
+            .nav {
+                margin: 0;
+            }
+
+            ul.nav-list {
+                > li,
+                > li:hover {
+                    background: none;
+                    border-bottom: 1px solid #006b9b;
+                    float: none;
+
+                    .nav-list-sub-wrap {
+                        display: none;
+                    }
+
+                    &.selected .nav-list-sub-wrap {
+                        background: #548332;
+                        display: block;
+                        padding: 0 0 0 10px;
+                        position: static;
+                        width: auto;
+                        z-index: 1;
+                    }
+
+                    a {
+                        border-bottom: 1px solid #0083be;
+                    }
+
+                    &:last-child {
+                        border-bottom: none;
+
+                        a {
+                            border-bottom: none;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        /*---- Dockbar ----*/
+
+        .dockbar-split .dockbar,
+        .dockbar {
+            float: right;
+            float: left;
+            height: auto;
+            position: relative;
+            z-index: 401;
+
+            .info-items {
+                height: auto;
+                position: static;
+                width: 300px;
+            }
+
+            .navbar-inner {
+                width: auto;
+
+                .btn-navbar {
+                    background: transparent;
+                    border: none;
+                    float: left;
+                    font-size: 24px;
+                    padding: 12px 15px;
+
+                    &:hover {
+                        background-color: #0083be;
+                        color: #fff;
+                    }
+
+                    &.open {
+                        background-color: #548332;
+                        color: #fff;
+                    }
+
+                    .user-avatar-image {
+                        height: 28px;
+                        width: 28px;
+                    }
+                }
+
+                .nav-account-controls {
+                    padding: 0 5px;
+
+                    .user-avatar-image {
+                        display: none;
+                    }
+                }
+
+                .nav-add-controls {
+                    background: transparent;
+                    border-top-width: 0;
+                    position: static;
+                    z-index: 350;
+                    padding: 0 5px;
+
+                    > li {
+                        float: none;
+                        margin: 0;
+                        position: relative;
+
+                        &.toggle-controls a {
+                            clip: rect(auto auto auto auto);
+                            position: static;
+                            visibility: visible;
+                        }
+
+                        .page-preview-controls {
+                            display: none;
+                        }
+
+                        > a {
+                            background: transparent;
+                            text-align: left;
+                            white-space: nowrap;
+
+                            &:hover {
+                                background: #F3f3f3;
+                            }
+
+                            [class^="icon-"], [class^="icon-"],
+                            [class*=" icon-"] {
+                                font-size: 22px;
+                                margin-top: 0;
+                            }
+
+                            &.toggle-controls-link {
+                                background: transparent;
+
+                                [class^="icon-"],
+                                [class^="icon-"],
+                                [class*=" icon-"] {
+                                    color: #FFF;
+                                }
+                            }
+
+                            .nav-item-label {
+                                background: transparent;
+                                display: inline;
+                                left: 0;
+                                margin-left: 0;
+                                margin-top: 0;
+                                padding: 0;
+                                position: relative;
+                            }
+
+                            &:hover .nav-item-label {
+                                display: inline;
+                            }
+
+                            .icon-caret-down {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+                .nav-collapse {
+                    z-index: 400;
+
+                    &.open {
+                        overflow: visible;
+                    }
+
+                    > .nav {
+                        background: #009AE5;
+                        border-width: 0;
+                        left: auto;
+                        margin: 0;
+                        min-width: 160px;
+                        position: absolute;
+                        right: 0;
+                        z-index: 400;
+
+                        > li {
+                            &.dropdown {
+                                .dropdown-menu li a {
+                                    font-size: 16px;
+                                    line-height: 32px;
+                                }
+
+                                &.open {
+                                    > .dropdown-toggle {
+                                        color: #FFFFFF;
+                                    }
+                                }
+                            }
+
+                            > a {
+                                color: #FFF;
+                                font-size: 16px;
+                                margin: 5px 0;
+                                padding: 6px 15px;
+
+                                &:focus, &:hover {
+                                    background-color: #5BBAE8;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .portlet-dockbar {
+            float: left;
+        }
+
+        .signed-out #_145_navAddControlsNavbarBtn {
+            display: none;
+        }
+
+        /* -----------------  Layout ----------------------- */
+
+        /*---- VAP Columns ----*/
+
+        .rp-columns-vap-start-page #column-2,
+        .rp-columns-vap-start-page #column-3 {
+            width: 48.61795%;
+        }
+
+        .rp-columns-vap-start-page #column-4 {
+            margin-right: 0;
+            width: 100.0%;
+        }
+
+        .signed-in .rp-columns-vap-start-page #column-4 {
+            margin-left: 0;
+        }
+
+        /* ----------------- Custom Portlets ----------------------- */
+
+        /*---- VAP Search Portlet ----*/
+
+        .vap-search-wrap {
+            padding: 0 2%;
+        }
+
+
+
+
+    }
+}
+
+@include respond-to(phone) {
+    .aui {
+
+        /* ----------------- Banner / header ----------------------- */
+        #wrapper {
+            padding: 0.5em 1em 0 1em;
+        }
+
+        #heading {
+
+            .site-title {
+                width: 162px;
+
+                a.logo {
+                    background-position: 0 -50px;
+                    margin-top: 10px;
+                    width: 162px;
+                }
+            }
+
+            .navbar-fixed-top,
+            .navbar-fixed-bottom,
+            .navbar-static-top {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+        }
+
+        /* ----------------- Sidebar Tools ----------------------- */
+
+        #toolsSidebar {
+            display: none;
+        }
+
+        /* ----------------- Navigation ----------------------- */
+
+        ul.section-navigation-list {
+
+            > li {
+              display: block;
+              min-width: auto;
+              width: 100%;
+            }
+
+        }
+
+
+        ul.site-navigation-list {
+
+            > li {
+                display: block;
+                min-width: auto;
+                width: 100%;
+            }
+
+        }
+
+        /* -----------------  Layout ----------------------- */
+
+        /*---- VAP Columns ----*/
+
+        .signed-out,
+        .signed-in {
+            .rp-columns-vap-start-page #column-2,
+            .rp-columns-vap-start-page #column-3,
+            .rp-columns-vap-start-page #column-4 {
+                margin-left: 0;
+                margin-right: 0;
+                width: 100.0%;
+            }
+        }
+
+        /* ----------------- Custom Portlets ----------------------- */
+
+        /*---- VAP Search Portlet ----*/
+
+        .vap-search-wrap {
+            padding: 0;
+        }
+
+        .search-box-left,
+        .search-box-right,
+        .search-box-center {
+            background: none;
+        }
+
+        .search-box-left,
+        .search-box-right {
+            padding: 0;
+        }
+
+        .search-box-center {
+            padding: 0;
+        }
+
+        .vap-search-wrap .search-input-wrap {
+            border: 1px solid #cad5de;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+            border-radius:  4px;
+            -moz-box-shadow: 0px 1px 4px 0px #cccccc;
+            -webkit-box-shadow: 0px 1px 4px 0px #cccccc;
+            box-shadow: 0px 1px 4px 0px #cccccc;
+        }
+
+        .search-input-wrap .control-group {
+            width: 82%;
+        }
+
+        .vap-search-button {
+            margin-top: 0;
+        }
+
+        /*---- VAP Search Results ----*/
+
+        .vap-search-results-summary {
+            font-size: 1.6em;
+        }
+
+
+        /*---- VAP Latest Documents ----*/
+
+        .vap-latest-documents > .bd {
+            min-height: 0;
+        }
+
+        /* ----------------- Articles ----------------------- */
+
+        /*---- News box article ----*/
+
+        .news-box-wrap {
+            display: none;
+}
+
+
+    }
+}
