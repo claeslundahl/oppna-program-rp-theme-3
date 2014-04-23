@@ -41,12 +41,25 @@ AUI().add('rp-theme-2',function(A) {
                         instance._initQuickAccessNav();
                         instance._initTyckTill();
                         instance._initSystemPageHelp();
+
+                        instance._fixDockbar();
                     },
     
                     bindUI: function() {
                         var instance = this;
                     },
-                    
+
+                    _fixDockbar: function() {
+                        var instance = this;
+
+                        var addButton = A.one('#_145_navAddControlsNavbarBtn');
+                        var addListItems = A.all('#_145_navAddControls > li');
+
+                        if(addListItems.size() == 0) {
+                            addButton.hide();
+                        }
+                    },
+
                     _initActionConfirmation: function() {
                     	var instance = this;
                     	
