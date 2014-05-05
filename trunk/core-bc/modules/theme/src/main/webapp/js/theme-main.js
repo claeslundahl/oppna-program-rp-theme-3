@@ -21,13 +21,17 @@ function addCssClassName(node, cssClassName) {
 AUI().ready('rp-theme-2', function(A) {
 	
 	var rpTheme2 = new A.RpTheme2().render();
+
+    A.one('win').on('load', function (e) {
+        AUI().use('aui-base', 'rp-footer-plugin', function(A) {
+            var footerNode = A.one('#footer');
+            if(footerNode) {
+                footerNode.plug(A.Plugin.RpFooter);
+            }
+        });
+    });
 });
 
 Liferay.on('allPortletsReady',function() {
-	AUI().use('aui-base', 'rp-footer-plugin', function(A) {
-		var footerNode = A.one('#footer');
-		if(footerNode) {
-			footerNode.plug(A.Plugin.RpFooter);	
-		}
-	});
+
 });
