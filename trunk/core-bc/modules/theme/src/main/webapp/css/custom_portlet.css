@@ -2292,22 +2292,231 @@ text-decoration: none;
 		padding: 6px;
 	}
 
-    /* MySystems (Min profil) */
+
+  /* -----------------MySystems (Min profil) ----------------------- */
+
+  .rp-my-systems-portlet {
+    
     div.checked {
         background-image: url(../images/common/checked.png);
         background-repeat: no-repeat;
         height: 20px;
         width: 20px;
     }
-
+  
     div.unchecked {
         background-image: url(../images/common/unchecked.png);
         background-repeat: no-repeat;
         height: 20px;
         width: 20px;
     }
+    
+  }
 
+    
+    /* -----------------User Bookmarks JSF ----------------------- */
+   
+  .user-bookmarks-jsf-portlet {
+     
+    .user-bookmarks {
+      
+      .bookmark-controls-main {
+        margin: 0;
+      }
+      
+      h2 {
+        color: #2f72a9;
+        font-size: 1.3em;
+        margin: 0.6em 0 0.6em 0;
+      }
+      
+    }
+    
+    .right {
+      float: right;
+      margin-right: 0px;
+      /*Added for IE/*/
+      position: relative;
+    }
+    
+    .bookmark-hd {
+      margin: 15px 0 10px 0;
+      overflow: hidden;
+      
+      h2 {
+        float: left;
+        margin: 0;
+        position: relative;
+      }
+      
+      .link-button {
+        float: right;
+        margin: 0 0 0 10px;
+        position: static;
+        display: inline-block;
+      }
+            
+    }
+    
+    .bookmark-title-toggle {
+      background: #ccc;
+      float: left;
+      font-size: 0;
+      height: 18px;
+      text-indent: -9999em;
+      width: 18px;
+    }
+    
+    .bookmark-item-minimized .bookmark-title-toggle {
+      background: transparent url(../images/arrows/rp-arrow-right.png) left center no-repeat;
+    }
+    
+    .bookmark-item-maximized .bookmark-title-toggle {
+      background: transparent url(../images/arrows/rp-arrow-down.png) left center no-repeat;
+    }
+    
+    .bookmark-title-wrap a.bookmark-title {
+      display: block;
+      line-height: 18px;
+      margin: 0 40px 0 4px;
+      text-decoration: none;
+      
+      &:hover {
+        text-decoration: underline;  
+      }
+    }
+    
+    .bookmark-ellipsis {
+        overflow: hidden;
+        position: absolute;
+        text-decoration: none;
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        -ms-text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 70%;
+    }
+    
+    .bookmark-more-info {
+        padding: 5px 10px 5px 16px;
+        
+        p {
+          margin: 0.3em 0;  
+        }
+    }
+    
+    .bookmark-item-minimized .bookmark-more-info {
+      display: none;
+    }
+    
+    .bookmark-item-maximized .bookmark-more-info {
+      display: block;
+    }
+    
+    .bookmark-controls {
+      position: absolute;
+      right: 10px;
+      top: 0px;
+      
+      a {
+        background: #ccc;
+        display: block;
+        float: left;
+        height: 16px;
+        font-size: 0;
+        margin: 0 0 0 10px;
+        text-indent: -9999em;
+        width: 16px;
+        
+        &.bookmark-edit {
+          background: transparent url(../images/common/edit.png) 0 0 no-repeat;  
+        }
+        
+        &.bookmark-delete {
+          background: transparent url(../images/common/close.png) 0 0 no-repeat;  
+        }
+
+      }
+        
+    }
+    
+    input[type="text"].bookmark-text-fields  {
+      color: #333;
+      font-size: 14px;
+      margin-left: 0px;
+      width: 100%;
+    }
+    
+    .input-text-padding {
+      padding-right: 15px;
+    }
+    
+    .bookmark-list {
+      
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      
+      li {
+        @include border-radius(3px);
+        list-style: none;
+        margin: 5px 0;
+        margin-left: 10px;
+        padding: 0px;
+      }
+      
+      .ui-datalist {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        
+        li {
+          @include border-radius(3px);
+          list-style: none;
+            margin: 5px 0;
+            margin-left: 10px;
+            padding: 0px;
+            position: relative;
+        }
+        
+        .ui-paginator-bottom {
+            margin-top: 5px;
+        }
+        
+        .ui-datalist-content {
+          background: #eef5fa;
+          border: 1px solid #c4ced5;
+          @include border-radius(3px);
+          padding: 3px;
+          margin-top: 2px;
+          margin-bottom: 5px;
+          
+          .ui-widget-content {
+              border: 1px;
+          }
+          
+        }
+        
+      }
+      
+      .ui-state-disabled,
+      .ui-widget-header .ui-state-disabled {
+          opacity: .35;
+          filter: Alpha(Opacity=35);
+      }
+    
+    }    
+
+  }
+
+     
+     
 }
+
+
+
+
+
 
 /* iFeed */
 
