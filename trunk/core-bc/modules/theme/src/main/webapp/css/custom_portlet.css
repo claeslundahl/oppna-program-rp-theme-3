@@ -2440,6 +2440,7 @@ text-decoration: none;
         
     }
     
+    textarea.bookmark-text-fields,
     input[type="text"].bookmark-text-fields  {
       color: #333;
       font-size: 14px;

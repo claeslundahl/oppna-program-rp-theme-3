@@ -988,6 +988,7 @@
   /*------- Primefaces dialog -------*/
   
   .ui-dialog {
+    background: #fff;
     -webkit-border-radius: 4px;
     border-radius: 4px;
     font-size: 12px;
@@ -1200,20 +1201,6 @@
     }
   
   }
-	
-	/*------- name -------*/
-	
-	/*------- name -------*/
-	
-	/*------- name -------*/
-	
-	/*------- name -------*/
-	
-	/*------- name -------*/
-	
-	/*------- name -------*/
-	
-	/*------- name -------*/
 	
 	
 
