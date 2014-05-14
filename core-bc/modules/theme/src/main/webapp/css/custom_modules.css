@@ -1,3 +1,6 @@
+@import "compass";
+@import "mixins";
+
 .aui {
 
 	/*----------------------------------------------------------------------
@@ -943,6 +946,276 @@
 		height: 24px;
 		width: 24px;
 	}
+	
+	/*------- JSF / Primefaces common -------*/
+	
+  /* Panel */
+  .ui-panel{
+    padding: 0px;
+    
+    .ui-panel-content {
+      background: none;
+      border: 0;
+      padding: 0px;
+    }
+  }
+  
+  /* Overlay mask */
+ .ui-widget-overlay {
+    background-color: #000;
+    left: 0;
+    height: 100%;
+    -moz-opacity: 0.50;
+    filter: alpha(opacity=30);
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);   
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    zoom: 1;
+  }
+
+ 
+  
+  .break-line {
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    word-break: break-all;
+  }
+  
+  /*------- Primefaces dialog -------*/
+  
+  .ui-dialog {
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 12px;
+    width: 300px;
+    
+    .ui-dialog-titlebar-close {
+      background: transparent url(../images/icons/icon-rp-close.png) 0 0 no-repeat;
+      cursor: pointer;
+      float: right;
+      height: 24px;
+      margin: 0px;
+      opacity: 0.7;
+      padding: 0px;
+      top: 0px;
+      width: 24px;
+    }
+    
+    .ui-dialog-content {
+      background-color: #FFF;
+      text-align: center;
+    }
+    
+    .ui-dialog-buttonpane {
+      background: #eef5fa;
+      background-image: none;
+      border-width: 1px 0 0 0;
+      border-top: 1px solid #c4ced5;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0.3em 1em 0.5em 0.4em;
+      text-align: center;
+      width: 300px;
+    }
+      
+  }
+  
+  /* Confirm dialog */
+  .ui-confirm-dialog {
+      width: 300px;
+      max-width:350px;
+      
+      .confirm-dialog-button {
+        background: #2865ad url(../images/buttons/button-bg-normal.png) 0 0 repeat-x;
+        border: 1px solid #2f71a8;
+        border-color: #2f71a8 #052a73 #052a73 #2f71a8;
+        @include border-radius(3px);
+        color: #fff;
+        font-size: 13px;
+        font-weight: normal;
+        line-height: 3;
+        margin-right: 10px;
+        padding: 7px 20px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        text-shadow: none;
+      }
+  } 
+	
+	
+	/*------- Primefaces paginator -------*/
+	
+	.vgr-paginator {
+	
+    .ui-paginator .ui-paginator-page {
+        display: inline;
+    }
+    
+    .ui-paginator {
+        text-align: center;
+    }
+    
+    .ui-datalist-content {
+        background: #eef5fa;
+        border: 1px solid #c4ced5;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        padding: 3px;
+        margin-top: 2px;
+        margin-bottom: 5px;
+    }
+    
+    .ui-paginator-pages .ui-paginator-page {
+        color: #2f72a9;
+        background: none;
+        border: 1px solid transparent;
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        border-radius: 6px;
+        display: inline;
+        font-family: Ubuntu, Arial, Verdana, Helvetica, sans-serif;
+        font-size: 14px;
+        line-height: 1.0;
+        padding: 2px 7px;
+        text-align: center;
+        text-decoration: none;
+        width: 20px;
+    }
+    
+    .ui-paginator-pages .ui-state-active {
+        background-color: white;
+        color: #000;
+        cursor: default;
+    }
+    
+    .ui-paginator-pages .ui-state-hover {
+        background-color: #e4edf9;
+        border-color: #255d8c;
+    
+    }
+    
+    .ui-paginator span {
+        text-align: center;
+    }
+    
+    .ui-datatable .ui-paginator {
+        background-color: blue;
+        border: 1px;
+    }
+    
+    .ui-paginator-last,
+    .ui-paginator-first {
+        background-image: url(/rp-bootstrap-theme/images/paginator/pager-simple-sprite.png);
+        background-repeat: no-repeat;
+        border: none;
+        height: 20px;
+        width: 20px;
+        line-height: 20px;
+        padding: 2px 30px;
+    }
+    
+    .ui-paginator .ui-paginator-last,
+    .ui-paginator .ui-paginator-first {
+        padding: 2px 2px;
+    
+    }
+    
+    .ui-paginator-last {
+        background-position: 100% -150px;
+    }
+    
+    .ui-paginator-first {
+        background-position: 0 -100px;
+    }
+    
+    .ui-state-disabled,
+    .ui-widget-header .ui-state-disabled {
+        opacity: .35;
+        filter: Alpha(Opacity=35);
+    }
+    
+    .ui-datalist .ui-paginator-bottom {
+        margin-top: 5px;
+    }
+  
+  }
+	
+	/*------- Primefaces ui error -------*/
+
+  .vgr-error-msg {
+
+    .ui-state-error {
+        border: 1px solid #F00;
+        color: #333;
+    }
+    
+    .ui-message-error  {
+        border: 1px;
+        color: #333;
+        font-weight: bold;
+        margin: 2px auto 14px;
+        padding: 6px 6px 6px 30px;
+        text-align: left;
+    }
+    
+    .ui-messages-error-summary {
+        border: 0px;
+        display: inline;
+        font-weight: bold;
+        margin: 2px auto 14px;
+        padding: 6px 6px 6px 0px;
+        text-align: left;
+    }
+    
+    .ui-message-info-icon {
+        background: #FDD url(/rp-bootstrap-theme/images/messages/error.png) no-repeat -1px 50%;
+    }
+    
+    .ui-messages-error,
+    .ui-message-error {
+        color: #333;
+        font-family: Arial,Verdana,Helvetica,sans-serif;
+        font-size: 12px;
+        background-color: #FDD;
+        border-color: #F00;
+    }
+    
+    .ui-messages .ui-messages-close {
+        float: none;
+        cursor: none;
+    }
+    
+    .ui-icon .ui-icon-alert .ui-confirm-dialog-severity {
+        background: #FDD url(/rp-bootstrap-theme/images/messages/error.png) no-repeat -1px 50%;
+    }
+    
+    .no-padding .aui-fieldset-content {
+        padding: 0;
+    }
+  
+  }
+	
+	/*------- name -------*/
+	
+	/*------- name -------*/
+	
+	/*------- name -------*/
+	
+	/*------- name -------*/
+	
+	/*------- name -------*/
+	
+	/*------- name -------*/
+	
+	/*------- name -------*/
+	
+	
 
 }
 
