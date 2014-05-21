@@ -79,7 +79,7 @@ AUI().add('rp-asset-publisher',function(A) {
                             dialog: {
                                 cssClass: 'rp-dialog',
                                 height: 500,
-                                width: 500
+                                width: 640
                             }
                         };
 
@@ -87,8 +87,6 @@ AUI().add('rp-asset-publisher',function(A) {
 
                         A.fire(CUSTOM_LINK_CLICK_EVENT, {currentTarget: currentTarget});
                     },
-                    
-                    
                     
                     _someFunction: function() {
                         var instance = this;

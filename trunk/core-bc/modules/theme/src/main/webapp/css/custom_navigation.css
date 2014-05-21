@@ -308,6 +308,8 @@
   /*------- Quick Access Navigation -------*/
 
   .quick-access-overlay {
+    left: 50% !important; /* Fix positioning issue. */
+    margin-left: -600px !important; /* 1200/2 */
     margin-top: -3px;
   }
 

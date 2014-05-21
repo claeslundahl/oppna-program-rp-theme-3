@@ -234,15 +234,7 @@ AUI().add('rp-quick-access-nav',function(A) {
                     	markupPrototypeNode.remove();
                     	markupPrototypeNode.destroy(true);
 
-                        var alignPoints = [A.WidgetPositionAlign.TR, A.WidgetPositionAlign.BR];
-                        alignPoints = [A.WidgetPositionAlign.TC, A.WidgetPositionAlign.BC];
-                        alignPoints = ['tc', 'bc'];
-
-                    	instance.overlayPanel = new A.OverlayContextPanel({
-                    		align: {
-                    			node: headingNode,
-                    			points: alignPoints
-                    		},
+                        instance.overlayPanel = new A.OverlayContextPanel({
                     		anim: true,
                     		bodyContent: bodyContent,
                     		boundingBox: '#quick-access-overlay-context-panel',
