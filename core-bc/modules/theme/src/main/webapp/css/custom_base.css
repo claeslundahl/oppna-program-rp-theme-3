@@ -284,6 +284,10 @@
       z-index: 3;
   }
 
+  .portlet-title-text {
+      overflow: visible;
+  }
+
   a.rp-link,
   a.rp-link:visited {
     background: url(../images/icons/link-icon.png) 0 50% no-repeat;

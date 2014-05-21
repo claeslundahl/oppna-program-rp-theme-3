@@ -622,12 +622,14 @@
         display: block;
         filter: none;
         font-size: 0;
-        height: 24px;
+        height: 32px;
         margin: 0;
         opacity: 1;
+        position: relative;
         text-align: -9999em;
         text-shadow: none;
-        width: 24px;
+        top: -3px;
+        width: 32px;
     }
 
     .rp-dialog .close:hover,
@@ -636,7 +638,15 @@
     .rp-dialog .btn.close:focus,
     .rp-dialog .close.active,
     .rp-dialog .btn.close.active {
-        background-position: 0 -38px;
+        background-position: 0 -50px;
+    }
+
+    .rp-dialog .btn:hover {
+        -webkit-transition: none;
+        -moz-transition: none;
+        -ms-transition: none;
+        -o-transition: none;
+        transition: none;
     }
 
 
@@ -649,7 +659,7 @@
 	}
 
 	.rp-dialog .aui-icon-closethick {
-		background: transparent url(../images/user-wizard/wizard-close-button-sprite.png) 0 0 no-repeat;
+		background: transparent url(../images/dialog/rp-dialog-close-sprite.png) 0 0 no-repeat;
 		height: 32px;
 		width: 32px;
 	}
@@ -881,7 +891,7 @@
 	}
 
 	.rp-iframe-dialog .aui-icon-closethick {
-		background: transparent url(../images/user-wizard/wizard-close-button-sprite.png) 0 0 no-repeat;
+		background: transparent url(../images/dialog/rp-dialog-close-sprite.png) 0 0 no-repeat;
 		height: 32px;
 		width: 32px;
 	}

@@ -1056,10 +1056,6 @@ text-decoration: none;
 		min-height: 0;
 	}
 
-	.controls-visible .user-wizard-portlet .portlet-borderless-container {
-		min-height: 2.5em;
-	}
-
 	/*-------User Wizard Dialog -------*/
 
 	.user-wizard-dialog .aui-dialog-hd {
@@ -1080,7 +1076,7 @@ text-decoration: none;
 	}
 
 	.user-wizard-dialog .aui-icon-closethick {
-		background: transparent url(../images/user-wizard/wizard-close-button-sprite.png) 0 0 no-repeat;
+		background: transparent url(../images/dialog/rp-dialog-close-sprite.png) 0 0 no-repeat;
 		height: 32px;
 		width: 32px;
 	}
