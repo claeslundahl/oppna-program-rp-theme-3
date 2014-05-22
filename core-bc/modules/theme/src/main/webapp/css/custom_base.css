@@ -4,6 +4,9 @@
 @import "compass/css3/user-interface";
 @import "mixins";
 
+html {
+    height: 100%;
+}
 
 .aui {
 
@@ -15,13 +18,19 @@
     font-family: Arial, Verdana, Helvetica, sans-serif;
     font-size: 12px;
     margin: 0;
+    min-height: 100%;
     padding: 0;
+    position: relative;
+  }
+
+  .ie6 body {
+      height: 100%;
   }
 
   /*------- wrapper -------*/
 
   #wrapper {
-      padding: 0.5em 5em 0;
+      padding: 0.5em 5em 91px; /* 91px is height of [#footer .logo] plus padding of [.footer-inner] */
   }
 
   .ie6 #wrapper {
@@ -192,7 +201,10 @@
 
   #footer {
     background: #eef4fa url(../images/bg/footer-bg.png) top left repeat-x;
+    bottom: 0;
+    height: 91px; /* 91px is height of [#footer .logo] plus padding of [.footer-inner] */
     padding: 0;
+    position: absolute;
     width: 100%;
   }
 

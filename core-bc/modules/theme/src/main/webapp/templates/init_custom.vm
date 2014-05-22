@@ -174,7 +174,6 @@
     "fixes/ios-orientationchange-fix.js",
     "modules/rp-action-confirmation-plugin.js",
     "modules/rp-asset-publisher.js",
-	"modules/rp-footer-plugin.js",
     "modules/rp-tyck-till.js",
     "modules/rp-quick-access-nav.js",
     "modules/rp-system-help.js",
