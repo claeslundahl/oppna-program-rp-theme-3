@@ -330,6 +330,7 @@
 		border: 1px solid #bbb;
 		border-width: 0 1px 1px 0;
 		padding: 5px 10px;
+        text-align: left;
 	}
 
 	/* Even column widths */
@@ -439,6 +440,7 @@
 	.rp-table-simple th {
 		border: none;
 		padding: 5px;
+        text-align: left;
 	}
 
 	.rp-table-simple td {

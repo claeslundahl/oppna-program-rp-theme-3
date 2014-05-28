@@ -537,6 +537,10 @@ text-decoration: none;
         text-decoration: none;
       }
 
+      .link-icon-wrap a {
+          margin: 0 5px;
+      }
+
       .aui-tree-view {
         overflow: visible;
       }
@@ -678,6 +682,10 @@ text-decoration: none;
 
       a.link-button-help .link-button-content {
         background: transparent url(../images/common/help.png) 0 0 no-repeat;
+      }
+
+      button {
+          font-size: 12px;
       }
 
       /*-- Meta info block ------*/
