@@ -43,14 +43,15 @@
 		font-size: 13px;
 		font-weight: normal;
 		line-height: 1.0;
-        margin: 5px 10px 5px 5px;
+        margin: 0 10px 5px 5px;
 		padding: 7px 20px;
 		position: relative;
 		text-align: center;
 		text-shadow: none;
 	}
 
-	.rp-button input[type="submit"] {
+	.rp-button input[type="submit"],
+    input[type="submit"].rp-button {
 		background: #2865ad url(../images/buttons/button-bg-normal.png) 0 0 repeat-x;
 		border: 1px solid #2f71a8;
 		border-color: #2f71a8 #052a73 #052a73 #2f71a8;
