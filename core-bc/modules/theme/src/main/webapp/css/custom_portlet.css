@@ -1846,7 +1846,7 @@ text-decoration: none;
 	/*-- VAP Flag --*/
 
 	.vap-flag {
-		background: transparent url(../images/aui/rating.png) 0 0 no-repeat;
+		background: transparent url(../images/icons/rating.png) 0 0 no-repeat;
 		display: block;
 		font-size: 0;
 		height: 16px;
