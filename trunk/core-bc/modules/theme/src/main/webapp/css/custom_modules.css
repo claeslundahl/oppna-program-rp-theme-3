@@ -1185,7 +1185,8 @@
         padding: 6px 6px 6px 0px;
         text-align: left;
     }
-    
+
+    .ui-messages-error-icon,
     .ui-message-info-icon {
         background: #FDD url(/rp-bootstrap-theme/images/messages/error.png) no-repeat -1px 50%;
     }
