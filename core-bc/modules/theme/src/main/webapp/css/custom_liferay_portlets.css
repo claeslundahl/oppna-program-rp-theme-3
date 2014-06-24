@@ -124,6 +124,9 @@
 		visibility: visible;
 	}
 
+    .dockbar .nav-add-controls>li.toggle-controls a {
+        clip: rect(auto, auto, auto, auto) !important;
+    }
 
 	/*------- Navigation Portlet (Section Navigation) ------*/
 
