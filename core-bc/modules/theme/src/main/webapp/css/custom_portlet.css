@@ -85,7 +85,12 @@
 	    font-weight: bold;
 	}
 
-	/* ---------------- dental grant portlet ------------------ */
+    /* ---------------- cs iframe portlet------------------ */
+    .cs-iframe input[type="text"] {
+        width: 500px;
+    }
+
+    /* ---------------- dental grant portlet ------------------ */
 	.dental-grant-wrap table.search-result td, table.search-result th {
 	    padding-right: 15px;
 	    border-bottom: gray solid thin;
@@ -1846,7 +1851,7 @@ text-decoration: none;
 	/*-- VAP Flag --*/
 
 	.vap-flag {
-		background: transparent url(../images/icons/rating.png) 0 0 no-repeat;
+		background: transparent url(../images/icons/rating.gif) 0 0 no-repeat;
 		display: block;
 		font-size: 0;
 		height: 16px;
