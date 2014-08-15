@@ -17,6 +17,10 @@
 	    background-color: transparent;
 	}
 
+    .portlet-borderless-container .portlet-options a.dropdown-toggle {
+        background: url(../images/portlet/options_borderless.png) 0px 2px;
+    }
+
 	.portlet .portlet-topper {
 		background: #2f6ea1 url(../images/portlet/portlet-hd-bg-2.png) top left repeat-x;
 		/*behavior: url(/vgr-alfa-theme/htc/css3pie.htc);*/

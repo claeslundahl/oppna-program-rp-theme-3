@@ -1524,6 +1524,7 @@ text-decoration: none;
 	ul.notifications-list li a,
 	ul.notifications-list li a:visited {
 		color: #555;
+        display: block;
 		text-decoration: none;
 	}
 
