@@ -211,7 +211,7 @@ html {
   .footer-inner {
     background: transparent url(../images/bg/footer-bg-shadow.png) top center no-repeat;
     color: #005095;
-    padding: 20px 0;
+    padding: 20px 0 0 0;
   }
 
   .footer-content {
