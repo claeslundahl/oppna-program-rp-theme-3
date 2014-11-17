@@ -86,7 +86,7 @@
 	}
 
     /* ---------------- cs iframe portlet------------------ */
-    .cs-iframe input[type="text"] {
+    .cs-iframe #portletConfig input[type="text"] {
         width: 500px;
     }
 
