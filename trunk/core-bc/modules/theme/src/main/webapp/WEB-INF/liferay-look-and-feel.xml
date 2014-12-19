@@ -8,12 +8,15 @@
 	<theme id="rp-bootstrap-theme" name="RP Bootstrap Theme">
 
 		<settings>
-			<setting key="portlet-setup-show-borders-default" value="false" configurable="true" type="checkbox" />
+			<setting key="global-info-header" value="" configurable="true" type="text" />
+			<setting key="portlet-setup-show-borders-default" value="true" configurable="true" type="checkbox" />
 			<setting key="use-rp-nav-portlet" value="true" configurable="true" type="checkbox" />
 			<setting key="show-breadcrumbs" value="true" configurable="true" type="checkbox" />
-            <setting key="show-notifications-bar" value="true" configurable="true" type="checkbox" />
-            <setting key="show-my-sites" value="false" configurable="true" type="checkbox" />
-            <setting key="show-tyck-till" value="true" configurable="true" type="checkbox" />
+			<setting key="show-notifications-bar" value="true" configurable="true" type="checkbox" />
+			<setting key="show-my-sites" value="false" configurable="true" type="checkbox" />
+			<setting key="show-tyck-till" value="true" configurable="true" type="checkbox" />
+			<setting key="show-top-navigation-wrap" value="true" configurable="true" type="checkbox" />
+			<setting key="additional-logo-class" value="rp" configurable="true" type="select" options="rp, vgr-portal" />
 		</settings>
 
 	</theme>

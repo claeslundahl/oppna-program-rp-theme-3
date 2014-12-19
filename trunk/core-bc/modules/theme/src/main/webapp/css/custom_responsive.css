@@ -316,7 +316,7 @@
             .site-title {
                 width: 162px;
 
-                a.logo {
+                a.logo, a.logo.rp, a.logo.vgr-portal {
                     background-position: 0 -50px;
                     margin-top: 10px;
                     width: 162px;
