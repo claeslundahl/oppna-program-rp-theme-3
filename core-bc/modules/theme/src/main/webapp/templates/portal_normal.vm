@@ -8,11 +8,16 @@
 	<title>$the_title - $company_name</title>
 
 	<meta content="initial-scale=1.0, width=device-width" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
 	$theme.include($top_head_include)
 </head>
 
 <body class="$css_class $css_rp_admin">
+
+#if ( "$theme.getSetting('global-info-header')" != "")
+	<div class="global-info-header">$theme.getSetting('global-info-header')</div>
+#end
 
 <a href="#main-content" id="skip-to-content">#language ("skip-to-content")</a>
 
@@ -23,7 +28,7 @@ $theme.include($body_top_include)
 	<header id="banner" role="banner">
 		<div id="heading" class="clearfix">
 			<h1 class="site-title">
-				<a class="$logo_css_class" href="$site_default_url" title="#language_format ("go-to-x", [$site_name])">
+				<a class="$logo_css_class $theme.getSetting('additional-logo-class')" href="$site_default_url" title="#language_format ("go-to-x", [$site_name])">
 					<img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width" />
 				</a>
 
@@ -43,11 +48,13 @@ $theme.include($body_top_include)
                     <div class="dockbar-wrap">
                         #dockbar()
                     </div>
-                    <div class="top-navigation-wrap">
-                        #if ($is_signed_in)
-                            #parse ("$full_templates_path/top_navigation.vm")
-                        #end
-                    </div>
+					#if ( "$theme.getSetting('show-top-navigation-wrap')" == "true")
+                        <div class="top-navigation-wrap">
+							#if ($is_signed_in)
+								#parse ("$full_templates_path/top_navigation.vm")
+							#end
+                        </div>
+					#end
                 </div>
 
 
