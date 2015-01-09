@@ -888,3 +888,7 @@
 		@include opacity(0.8);
 	}
 }
+
+#content > .alert-info {
+	display: none;
+}
