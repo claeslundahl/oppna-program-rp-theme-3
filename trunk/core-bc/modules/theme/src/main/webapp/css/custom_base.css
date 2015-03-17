@@ -73,7 +73,7 @@ html {
     display: block;
     float: left;
     margin: 0;
-    width: 374px;
+    width: 440px;
   }
 
   .site-title-responsive,
@@ -93,6 +93,10 @@ html {
 
   #banner .site-title .logo.vgr-portal {
     background: url(../images/logo/logo-vgr-portal.png) 0 0 no-repeat;
+  }
+
+  #banner .site-title .logo.blandbarhet {
+    background: url(../images/logo/logo-vgr-blandbarhet.png) 0 0 no-repeat;
   }
 
   #banner .site-title .logo img {
