@@ -107,6 +107,8 @@ $theme.include($body_bottom_include)
 
 $theme.include($bottom_include)
 
+#parse ("$full_templates_path/piwik.vm")
+
 </body>
 
 </html>
