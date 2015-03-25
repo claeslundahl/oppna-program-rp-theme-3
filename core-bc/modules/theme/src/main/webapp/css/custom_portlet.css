@@ -4,6 +4,55 @@
 @import "compass/css3/user-interface";
 @import "mixins";
 
+// Creating a triangle
+// --------
+@mixin triangle ($size, $color, $direction) {
+  height: 0;
+  width: 0;
+
+  @if ($direction == up) or ($direction == down) or ($direction == right) or ($direction == left) {
+    border-color: transparent;
+    border-style: solid;
+    border-width: $size / 2;
+
+    @if $direction == up {
+      border-bottom-color: $color;
+
+    } @else if $direction == right {
+      border-left-color:   $color;
+
+    } @else if $direction == down {
+      border-top-color:    $color;
+
+    } @else if $direction == left {
+      border-right-color:  $color;
+    }
+  }
+
+  @else if ($direction == up-right) or ($direction == up-left) {
+    border-top: $size solid $color;
+
+    @if $direction == up-right {
+      border-left:  $size solid transparent;
+
+    } @else if $direction == up-left {
+      border-right: $size solid transparent;
+    }
+  }
+
+  @else if ($direction == down-right) or ($direction == down-left) {
+    border-bottom: $size solid $color;
+
+    @if $direction == down-right {
+      border-left:  $size solid transparent;
+
+    } @else if $direction == down-left {
+      border-right: $size solid transparent;
+    }
+  }
+}
+
+
 .aui {
 	/*----------------------------------------------------------------------
 	=Custom Portlets
@@ -753,22 +802,107 @@ text-decoration: none;
       }
 
       /*-- Steps (arrow flow) ------*/
+/*
       .ifeed-step {
-        background: transparent url(../images/ifeed/ifeed-arrow-sprite.png ) 0 0 no-repeat;
+        //background: transparent url(../images/ifeed/ifeed-arrow-sprite.png ) 0 0 no-repeat;
         margin: 10px 0;
-        padding: 0 0 0 45px;
-      }
+        //padding: 0 0 0 45px;
 
-      .ifeed-step span {
-        background: transparent url(../images/ifeed/ifeed-arrow-sprite.png ) right -70px no-repeat;
+        background: #ddd;
+
         color: #444;
         display: block;
         font-size: 1.6em;
-        height: 48px;
-        line-height: 48px;
+		line-height: 1.0;
         margin: 0;
-        padding: 0 45px 0 0;
+
+		padding: 20px 0;
+
+
+        &:before {}
+
+        &:after {
+
+            content: "";
+            display: inline-block;
+            float: right;
+            margin-right: 0.4em;
+            position: relative;
+            right: -5px;
+            top: 50%;
+
+            @include triangle(10px, #ddd, right);
+
+        }
       }
+
+
+
+      .ifeed-step span {
+        //background: transparent url(../images/ifeed/ifeed-arrow-sprite.png ) right -70px no-repeat;
+        //color: #444;
+        //display: block;
+        //font-size: 1.6em;
+        //height: 48px;
+        //line-height: 48px;
+        //margin: 0;
+        //padding: 0 45px 0 0;
+      }
+*/
+
+		.ifeed-step {
+
+			// Some variables
+			$ifeed-step-size: 30px;
+			$ifeed-step-size-exp: $ifeed-step-size + 20px;
+
+			$ifeed-step-bg: #dfebf5;
+			$ifeed-step-color: #333;
+
+			margin: 1em 0;
+			overflow: hidden;
+
+			span {
+				background: $ifeed-step-bg;
+				color: $ifeed-step-color;
+				display: block;
+				font-size: 1.2em;
+				margin-right: $ifeed-step-size;
+				padding: 10px 0;
+				padding-left: 20px;
+				//padding-left: $ifeed-step-size-exp;
+				position: relative;
+
+				@include border-radius(6px 0 0 6px);
+
+				&:after {
+					border-top: $ifeed-step-size-exp solid transparent;
+					border-bottom: $ifeed-step-size-exp solid transparent;
+					border-left: $ifeed-step-size solid $ifeed-step-bg;
+					content: " ";
+					display: block;
+					height: 0;
+					left: 100%;
+					margin-top: -$ifeed-step-size-exp;
+					position: absolute;
+					top: 50%;
+					width: 0;
+					z-index: 2;
+				}
+
+			}
+
+		}
+
+		.ifeed-filter-box {
+			border: 1px solid #ccc;
+			padding: 10px;
+			@include border-radius(6px);
+
+			h3 {
+				margin-top: 0;
+			}
+		}
 
       /* Search container style */
       .parent-search-container .col-1 {
