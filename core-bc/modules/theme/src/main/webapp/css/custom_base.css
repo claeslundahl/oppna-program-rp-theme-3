@@ -73,7 +73,7 @@ html {
     display: block;
     float: left;
     margin: 0;
-    width: 440px;
+    width: 444px;
   }
 
   .site-title-responsive,
@@ -97,6 +97,10 @@ html {
 
   #banner .site-title .logo.blandbarhet {
     background: url(../images/logo/logo-vgr-blandbarhet.png) 0 0 no-repeat;
+  }
+
+  #banner .site-title .logo.wwwprv {
+    background: url(../images/logo/logo-vgr-wwwprv.png) 0 0 no-repeat;
   }
 
   #banner .site-title .logo img {
