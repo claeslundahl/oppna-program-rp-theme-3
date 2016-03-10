@@ -98,7 +98,7 @@
 ##
 
 #set($tycktillPortalURL = "#tyck-till")
-#set($tycktillDialogURL = "http://tycktill.vgregion.se/tyck-till/tycktill/KontaktaOss?formName=portalen&breadcrumb=portalen-tycktill")
+#set($tycktillDialogURL = "//tycktill.vgregion.se/tyck-till/tycktill/KontaktaOss?formName=portalen&breadcrumb=portalen-tycktill")
 
 ##
 ## Quick Access Navigation
