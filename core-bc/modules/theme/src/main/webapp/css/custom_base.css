@@ -103,6 +103,10 @@ html {
     background: url(../images/logo/logo-vgr-wwwprv.png) 0 0 no-repeat;
   }
 
+  #banner .site-title .logo.vega {
+    background: url(../images/logo/logo-vgr-vega.png) 0 0 no-repeat;
+  }
+
   #banner .site-title .logo img {
     display: none;
   }

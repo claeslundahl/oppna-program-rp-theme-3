@@ -228,6 +228,14 @@
     text-shadow: none;
   }
 
+  #navigation ul.nav-list > li:first-child > a > span {
+    background: url(../images/navigation/nav-home-icon.png) 50% 50% no-repeat;
+    font-size: 0;
+    padding-left: 30px;
+    padding-top: 14px;
+    text-indent: -9999em;
+  }
+
   /* Hover */
   #navigation ul.nav-list li.hover > a,
   #navigation ul.nav-list li:hover > a {
