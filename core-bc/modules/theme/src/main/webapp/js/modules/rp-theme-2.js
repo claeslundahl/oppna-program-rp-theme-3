@@ -56,7 +56,9 @@ AUI().add('rp-theme-2',function(A) {
                         var addListItems = A.all('#_145_navAddControls > li');
 
                         if(addListItems.size() == 0) {
-                            addButton.hide();
+							if (addButton) {
+								addButton.hide();
+							}
                         }
                     },
 
