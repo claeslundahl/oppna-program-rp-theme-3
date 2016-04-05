@@ -2,7 +2,7 @@
 	<@includePortlet portlet_id=rp_navigation_portlet_id />
 <#else>
 
-	<nav class="${nav_css_class}" id="navigation" role="navigation">
+	<nav id="navigation" role="navigation">
 		<ul role="menubar" class="nav-list clearfix">
 
 			<#list nav_items as nav_item>
