@@ -246,7 +246,7 @@
   /* Selected */
   #navigation ul.nav-list > li.selected > a,
   #navigation ul.nav-list > li.selected.hover > a,
-  #navigation ul.nav-list > li.selected:hover > a { 
+  #navigation ul.nav-list > li.selected:hover > a {
     background: #548332 url(../images/navigation/navigation-bg-active.png) top left repeat-x;
     color: #fff;
   }
@@ -306,7 +306,7 @@
 
   /* Show dropdown on hover */
   #navigation  ul.nav-list > li:hover > ul {
-    
+
   }
 
   #navigation  ul.nav-list > li:hover > .nav-list-sub-wrap {
@@ -326,31 +326,31 @@
     /*behavior: url(/vgr-alfa-theme/htc/css3pie.htc);*/
     -moz-border-radius: 3px 0 0 3px;
     -webkit-border-radius: 3px 0 0 3px;
-    border-radius: 3px 0 0 3px; 
+    border-radius: 3px 0 0 3px;
     border: 1px solid #cad5de;
     -moz-box-shadow: 0px 1px 4px 0px #ccc;
     -webkit-box-shadow: 0px 1px 4px 0px #ccc;
     box-shadow: 0px 1px 4px 0px #ccc;
     position: relative;
-    
+
     border: 1px solid #4d79b4;
     -moz-border-radius: 0 0 3px 3px;
     -webkit-border-radius: 0 0 3px 3px;
-    border-radius: 0 0 3px 3px; 
-    
+    border-radius: 0 0 3px 3px;
+
     -moz-box-shadow: 0px 1px 4px 0px #4d79b4;
     -webkit-box-shadow: 0px 1px 4px 0px #4d79b4;
     box-shadow: 0px 1px 4px 0px #4d79b4;
-    
+
   }
 
   .quick-access-nav-hd {
     border-bottom: 1px solid #dadfe5;
     padding: 0 0 5px 0;
     margin: 0 0 5px 0;
-    
+
     border-bottom: 1px solid #4d79b4;
-    
+
     background: #4d79b4;
     color: #fff;
     margin: -8px -8px 5px -8px;
@@ -363,7 +363,7 @@
     float: left;
     margin: 0 10px 0 0;
     width: 130px;
-    
+
     color: #fff;
   }
 

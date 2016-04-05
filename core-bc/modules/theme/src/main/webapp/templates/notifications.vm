@@ -1,5 +1,0 @@
-<div id="notifications" class="notifications-wrap">
-		#set ($VOID = $velocityPortletPreferences.setValue("portlet-setup-show-borders", "false"))
-		$theme.runtime($notifications_portlet_id, "", $velocityPortletPreferences.toString())
-		#set ($VOID = $velocityPortletPreferences.reset())
-</div>
