@@ -313,6 +313,11 @@
     display: block;
   }
 
+  /* Third level */
+  #navigation ul.nav-list ul ul {
+    display: none;
+  }
+
   /*------- Quick Access Navigation -------*/
 
   .quick-access-overlay {

@@ -42,6 +42,21 @@
 										<a aria-labelledby="layout_${nav_child.getLayoutId()}" href="${nav_child.getURL()}" ${nav_child.getTarget()} role="menuitem">
 											${nav_child.getName()}
 										</a>
+
+										<#-- Third level is used for quick navigation -->
+										<#if nav_child.hasChildren()>
+											<ul>
+												<#list nav_child.getChildren() as nav_child_child>
+												<li role="presentation">
+													<a href="${nav_child_child.getURL()}"role="menuitem">
+														${nav_child_child.getName()}
+													</a>
+												</li>
+												</#list>
+											</ul>
+										</#if>
+
+
 									</li>
 
 								</#list>
