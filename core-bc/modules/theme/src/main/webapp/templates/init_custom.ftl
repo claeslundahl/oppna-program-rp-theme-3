@@ -47,10 +47,10 @@
 </#if>
 
 <#-- Show Sign In Link -->
-<#assign show_sign_in_link = true />
+<#assign show_sign_in_link = false />
 
-<#if theme_display.getThemeSetting("show-signin-link") == "false">
-	<#assign show_sign_in_link = false />
+<#if !is_signed_in && theme_display.getThemeSetting("show-signin-link") == "true">
+	<#assign show_sign_in_link = true />
 </#if>
 
 <#-- Show Tyck till -->

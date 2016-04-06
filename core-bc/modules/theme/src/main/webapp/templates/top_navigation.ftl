@@ -11,7 +11,7 @@
 		</#if>
 
 		<#if show_sign_in_link>
-			<li class="top-nav-signout last">
+			<li class="top-nav-signin last">
 				<@includePortlet portlet_id=loginlink_portlet_id />
 			</li>
 		</#if>
