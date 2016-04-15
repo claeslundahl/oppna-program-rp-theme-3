@@ -99,6 +99,10 @@ html {
     background: url(../images/logo/logo-vgr-blandbarhet.png) 0 0 no-repeat;
   }
 
+  #banner .site-title .logo.ifeed {
+      background: url(../images/logo/logo-vgr-ifeed-admin.png) 0 0 no-repeat;
+  }
+
   #banner .site-title .logo.wwwprv {
     background: url(../images/logo/logo-vgr-wwwprv.png) 0 0 no-repeat;
   }
