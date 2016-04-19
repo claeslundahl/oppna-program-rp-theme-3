@@ -20,7 +20,7 @@
 			<setting key="show-tyck-till" value="true" configurable="true" type="checkbox" />
 			<setting key="show-top-navigation-wrap" value="true" configurable="true" type="checkbox" />
 			<setting key="show-quick-navigation" value="true" configurable="true" type="checkbox" />
-			<setting key="additional-logo-class" value="rp" configurable="true" type="select" options="rp,vgr-portal,blandbarhet,wwwprv,vega,ifeed" />
+			<setting key="additional-logo-class" value="rp" configurable="true" type="select" options="rp,vgr-portal,blandbarhet,wwwprv,vega,ifeed,tage" />
       <setting key="enable-piwik" value="false" configurable="true" type="checkbox" />
       <setting key="piwik-site-id" value="" configurable="true" type="text" />
 		</settings>
