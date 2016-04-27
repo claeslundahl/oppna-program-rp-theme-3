@@ -502,6 +502,10 @@
 
 	/*------- Blogs Portlet ------*/
 
+    li.edit-entry-permissions, li.edit-entry, li.delete-entry {
+        display: inline;
+    }
+
 	.portlet-blogs {}
 
 	.portlet-blogs .search-form {
