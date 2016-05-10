@@ -31,6 +31,7 @@ html {
 
   #wrapper {
       padding: 0.5em 5em 91px; /* 91px is height of [#footer .logo] plus padding of [.footer-inner] */
+      position: static;
   }
 
   .ie6 #wrapper {
