@@ -110,6 +110,14 @@
 	}
 
 	/*--------- VEGA -----------*/
+	.vega-portlet select {
+		width: 400px;
+	}
+
+	.vega-portlet .rp-table-filters select {
+		width: 220px;
+	}
+
 	.vega-box-inner > ol {
 	    list-style-type: decimal;
 	}
