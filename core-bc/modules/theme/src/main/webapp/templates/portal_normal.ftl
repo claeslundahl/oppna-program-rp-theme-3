@@ -67,7 +67,7 @@ ${theme.include(body_top_include)}
 			<#if show_notifications_portlet>
 				<#include "${full_templates_path}/notifications.ftl" />
 			</#if>
-			<#if is_signed_in || show_tyck_till>
+			<#if is_signed_in && show_tyck_till>
 				<#include "${full_templates_path}/tyck_till_content.ftl" />
 			</#if>
 		</div>
